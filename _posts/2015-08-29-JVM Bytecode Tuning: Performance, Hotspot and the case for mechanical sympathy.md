@@ -1,6 +1,6 @@
 ---
 title: "JVM Bytecode Tuning: Performance, Hotspot, and the Case for Mechanical Sympathy"
-date: 2015-11-12T14:45:00-04:00
+date: 2015-08-29T14:45:00-04:00
 categories:
   - blog
 author: Ganesh Raman

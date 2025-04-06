@@ -1,6 +1,6 @@
 ---
 title: "Performance Tuning in Oracle: Hints, Local Compute, and the Art of Letting the Optimizer Breathe"
-date: 2015-10-05T10:12:00-04:00
+date: 2015-08-21T10:12:00-04:00
 categories:
   - blog
 author: Ganesh Raman
