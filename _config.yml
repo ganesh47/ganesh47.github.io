@@ -76,6 +76,10 @@ author:
 #      url: "https://instagram.com/"
 
 footer:
+  links:
+    - label: "cv"
+      icon: "fas fa-file-signature"
+      url: "https://ganesh47.github.io/aboutme/"
 #  links:
 #    - label: "Twitter"
 #      icon: "fab fa-fw fa-twitter-square"
