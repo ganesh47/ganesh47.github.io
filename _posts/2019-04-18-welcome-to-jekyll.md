@@ -50,8 +50,10 @@ Haskell forces you to **design your programs from the outside in**. You start wi
 generateReport :: User -> [Transaction] -> Report
 ```
 You ask: What are the inputs? What are the guarantees? The compiler becomes an ally. If your program compiles, you’ve already proven a large set of invariants. No nulls, no side-effects slipping through, no runtime type mismatches.
-
+````
 “Make illegal states unrepresentable.”
+````
+
 Haskell takes this mantra and bakes it into the core of how you think.
 It also taught me the power of composition. In Haskell, small pure functions can be composed like Lego blocks — predictable, testable, and side-effect free. Instead of building large monoliths, you build pipelines of transformations, each type-safe, each testable in isolation.
 
@@ -59,7 +61,7 @@ Haskell’s type classes opened up a world of polymorphism without inheritance. 
 
 Most of all, Haskell taught me this: types are not annotations — they are design constraints. And great constraints make great software.
 
-DSLs as Typed Modeling Environments
+### DSLs as Typed Modeling Environments
 
 Returning to my DSL work with this mindset, I saw the possibilities explode.
 
@@ -78,15 +80,16 @@ This, to me, felt like the right direction.
 
 But there was one more dimension to explore — the deep end of type theory.
 
-Dependent Types: Precision at Compile-Time
+### Dependent Types: Precision at Compile-Time
 
 Enter dependent types — a world where types can depend on values. Languages like Idris, Agda, and Coq operate in this space, where code and proofs coexist.
 
 Here’s a simple example in Idris:
-
+```haskell 
 data Vect : Nat -> Type -> Type where
 Nil  : Vect 0 a
 (::) : a -> Vect n a -> Vect (S n) a
+```
 This defines a vector that knows its length at the type level. That means you can enforce, at compile time, that two vectors must be of the same size before zipping them.
 
 Want to prove that reversing a list twice gives you the original list?
@@ -122,7 +125,7 @@ Here’s what I believe now:
 
 If You’re Curious…
 
-Here’s how you can dive deeper:
+### Here’s how you can dive deeper:
 
 Try JetBrains MPS: Start with the Fast Track tutorial to build a DSL with real tooling.
 Learn Haskell: Read Learn You a Haskell for Great Good! or Real World Haskell. Don't be intimidated — even partial exposure will rewire your thinking.
