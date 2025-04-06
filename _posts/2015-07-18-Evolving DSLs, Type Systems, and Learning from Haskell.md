@@ -3,6 +3,11 @@ layout: post
 title: "Evolving DSLs, Type Systems, and Learning from Haskell"
 date: 2015-07-18T15:34:30-04:00
 author: Ganesh Raman
+tags:
+   - DSLs
+   - Type Systems
+   - Haskell
+   - Dependent Types
 ---
 
 When I first began building domain-specific languages (DSLs), I focused on surface-level structure. Syntax. Keywords. Aesthetics. I believed if the language looked clean and intuitive, people would adopt it. And to an extent, that worked — good syntax lowers the barrier to entry.
