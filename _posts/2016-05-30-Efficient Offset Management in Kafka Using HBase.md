@@ -14,7 +14,7 @@ tags:
   - Data Engineering
 ---
 
-By May 2016, Kafka was well-established as a backbone for real-time data pipelines. But as usage scaled and teams built increasingly distributed consumer groups, a key challenge emerged: **efficient, scalable offset management**.
+Kafka is a well-established as a backbone for real-time data pipelines. But as usage scaled and teams built increasingly distributed consumer groups, a key challenge emerged: **efficient, scalable offset management**.
 
 While Kafka provided default offset storage via **Zookeeper** (and later, Kafka’s own internal topics), some use cases called for more **flexible, externalized control** — especially in regulated environments or those demanding fine-grained consumption control.
 
@@ -102,5 +102,5 @@ In your Kafka consumer:
 
 > “Offset management isn’t just metadata — it’s *state*. And in scalable systems, state must be designed.”
 
-In 2016, storing Kafka offsets in HBase gave teams not just flexibility, but **control, observability, and operational leverage** — the kind needed for real-time systems to behave reliably under scale.
+In 2016, storing Kafka offsets in HBase gives teams not just flexibility, but **control, observability, and operational leverage** — the kind needed for real-time systems to behave reliably under scale.
 
