@@ -56,7 +56,8 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-
+comments:
+  provider: "giscus"
 author:
   name   : "Ganesh Raman"
   avatar : "/assets/images/bio-photo.jpg"
