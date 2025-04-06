@@ -89,4 +89,23 @@ Advanced features include:
 
 Administrators can:
 - View active queues and utilization via the **ResourceManager UI**
-- Use `yarn scheduler` CLI to inspect queue configuratio
+- Use `yarn scheduler` CLI to inspect queue configurations
+- Modify queue policies dynamically via XML or REST API
+
+Best practices:
+- Use **queue-level resource limits** to prevent starvation
+- Enable **preemption carefully**, as it impacts job stability
+- Monitor **container allocation logs** to debug performance bottlenecks
+
+---
+
+## If You’re Curious…
+
+- Create custom queues with the Capacity Scheduler and test elastic behavior
+- Enable Fair Scheduler and test preemption between short and long jobs
+- Explore node labeling for isolating experimental workloads
+- Watch how YARN adjusts allocations as jobs start and complete
+
+> “In a distributed world, fairness isn’t just ethical — it’s operational.”
+
+In 2016, YARN’s Resource Manager gives organizations the tools to build **scalable, fair, and policy-driven compute clusters**. From financial batch workloads to interactive analytics, its flexible scheduling strategies make large-scale data processing not just powerful, but governable.
