@@ -16,7 +16,7 @@
 title: Life, learnings and realities....
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Ruminations on life, learnings amongst others...
+  Ganesh's Ruminations on life, learnings amongst others...
 #twitter_username: username
 github_username: ganesh47
 repository: ganesh47/ganesh47.github.io
@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Ganesh Raman"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : ""
+  bio    : "Technology and engineering leader with over a decade of experience building scalable, secure digital platforms across Cloud, AI/ML, SaaS, Data Platforms, and Cybersecurity. Currently leading Digital Business Models at HBK, driving cross-functional strategy, product innovation, and organization design across global markets.Brings a blend of deep technical expertise and commercial insight—operating at the intersection of enterprise architecture, agile delivery, and digital transformation. This blog captures thoughts on system design, programming paradigms, and the practical realities of scaling engineering in complex environments."
 #  links:
 #    - label: "Website"
 #      icon: "fas fa-fw fa-link"
