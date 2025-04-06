@@ -80,6 +80,8 @@ author:
 #      url: "https://instagram.com/"
 
 footer:
+  copyright:
+    enabled: false
   links:
     - label: "About me"
       icon: "fas fa-file-signature"
