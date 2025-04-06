@@ -1,21 +1,22 @@
-Here's your **July 2, 2016** blog post, written in present tense, on Git as a Distributed Version Control System (DVCS), with a focus on its internal implementation and graph structure:
-
+---
+title: "Git as a Distributed System: Internals, Object Graphs, and Why the DAG Matters"
+date: 2016-07-02
+categories:
+  - blog
+author: Ganesh Raman
+tags:
+  - git
+  - DVCS
+  - data-structures
+  - conflict-resolution
+  - DAG
 ---
 
-### Title: *Git as a Distributed System: Internals, Object Graphs, and Why the DAG Matters*
-**Date:** 2016-07-02  
-**Author:** Ganesh Raman  
-**Tags:** git, DVCS, data structures, conflict resolution, acyclic graphs
-
----
-
-When we use Git every day, it feels simple. `git commit`, `git push`, `git merge`. But underneath the CLI, Git is one of the most interesting and elegant distributed systems in active use today. Unlike centralized version control tools, Git is a **Distributed Version Control System (DVCS)** — which means **every clone of a repository is a full copy**, complete with history, metadata, and branching information.
+When we use Git every day, it feels simple: `git commit`, `git push`, `git merge`. But underneath the CLI, Git is one of the most interesting and elegant distributed systems in active use today. Unlike centralized version control tools, Git is a **Distributed Version Control System (DVCS)** — which means **every clone of a repository is a full copy**, complete with history, metadata, and branching information.
 
 But distributed systems are hard. And Git solves a remarkably complex set of problems through a clever use of **immutable data structures**, **content-addressed storage**, and **Directed Acyclic Graphs (DAGs)**.
 
----
-
-### Git as a Distributed System
+## Git as a Distributed System
 
 In Git, there is no "central server" by design. Every developer’s local repository holds:
 
@@ -28,9 +29,7 @@ This distributed nature provides **resilience**, **autonomy**, and **speed**. De
 
 What makes this work? Git’s internal model, built around **immutable objects**.
 
----
-
-### The Object Model
+## The Object Model
 
 At its core, Git stores just four kinds of objects:
 
@@ -49,9 +48,7 @@ When you commit, Git writes:
 
 This structure forms a **DAG** — a Directed Acyclic Graph — of commits. No cycles. No ambiguity. Just a clear, traceable lineage of your code.
 
----
-
-### Why the DAG Matters
+## Why the DAG Matters
 
 The DAG is not just a data structure — it’s Git’s **core consistency model**.
 
@@ -67,9 +64,7 @@ Because all references are immutable (a commit can’t be changed once written),
 
 This immutability and acyclic guarantee make Git **reliable in a distributed environment**. It doesn't rely on locks, central databases, or complex synchronization.
 
----
-
-### Conflict Resolution and Merging
+## Conflict Resolution and Merging
 
 Conflict resolution in Git is not about locking resources like in traditional SCM systems. Instead, it's **semantic** and **state-based**.
 
@@ -81,17 +76,13 @@ Git uses a **three-way merge algorithm**:
 
 Because the DAG encodes full history, finding this ancestor is deterministic. Git then computes diffs between each branch and the ancestor to surface conflicts — which you resolve locally.
 
----
-
-### Branching and the Power of Isolation
+## Branching and the Power of Isolation
 
 Branches in Git are extremely lightweight. They are just **references to commit hashes**, nothing more. Because all data is local and immutable, creating a new branch is instantaneous. This is a major departure from systems like Subversion, where branching is an expensive operation.
 
 With distributed branching, each user can explore changes independently. Later, Git’s **merge machinery** brings them together. And because the history is embedded in the DAG, we can always trace who made what change and when.
 
----
-
-### Conclusion: Distributed, Immutable, Efficient
+## Conclusion: Distributed, Immutable, Efficient
 
 Git’s design is an elegant solution to the hard problem of **distributed collaboration**. It doesn’t try to hide complexity — it gives you powerful tools built on strong foundations:
 
@@ -103,6 +94,3 @@ Git’s design is an elegant solution to the hard problem of **distributed colla
 Even though it wasn’t designed as a general distributed systems tool, Git embodies many principles that modern distributed databases, consensus systems, and data pipelines borrow from today.
 
 > Git’s DAG is more than a history — it’s a model of truth that scales across people, time, and systems.
-
----
-
