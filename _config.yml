@@ -19,9 +19,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   Ruminations on life, learnings amongst others...
 #twitter_username: username
 github_username: ganesh47
+repository: ganesh47/ganesh47.github.io
 minimal_mistakes_skin: default
 search: true
-
+url: "https://ganesh47.github.io"
+baseurl: ""  # if using root, else "/blog" etc.
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes

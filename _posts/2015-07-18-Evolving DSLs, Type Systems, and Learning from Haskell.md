@@ -1,7 +1,8 @@
 ---
-layout: post
 title: "Evolving DSLs, Type Systems, and Learning from Haskell"
 date: 2015-07-18T15:34:30-04:00
+categories:
+   - blog
 author: Ganesh Raman
 tags:
    - DSLs
