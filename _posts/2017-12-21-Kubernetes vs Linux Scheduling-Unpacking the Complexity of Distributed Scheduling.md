@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes vs Linux Scheduling: Unpacking the Complexity of Distributed Scheduling"
-date: 2017-12-31 00:00:00 +0530
+date: 2017-12-31
 author: Ganesh Raman
 categories: [blog]
 tags: [blog, kubernetes, cloud-native, devops, distributed-systems, orchestration, golang, etcd]
