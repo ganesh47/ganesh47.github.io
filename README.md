@@ -1,2 +1,2 @@
-# Minimal Mistakes remote theme starter
+# Blogs
 
