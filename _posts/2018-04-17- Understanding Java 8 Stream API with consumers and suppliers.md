@@ -2,7 +2,7 @@
 
 layout: post
 title: "Understanding Java 8’s Stream API: Consumer and Supplier Interfaces"
-date: 2018-04-17 10:00:00 +0530
+date: 2018-04-17
 categories: [blog]
 tags: [java, streams, api, consumer, supplier, functional]
 author: ganesh
