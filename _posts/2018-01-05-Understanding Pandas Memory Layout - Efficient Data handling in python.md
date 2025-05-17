@@ -4,7 +4,7 @@ date: 2018-01-05
 categories: [blog]
 tags: [pandas, python, memory, performance, dataframe, series]
 author: Ganesh Raman
-----
+---
 
 When working with large datasets in Python, **memory efficiency** becomes critical. One of the reasons **Pandas** remains a powerhouse for data manipulation is its underlying **block-based memory layout** — a design that provides both speed and scalability.
 

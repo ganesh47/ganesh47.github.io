@@ -5,7 +5,7 @@ categories:
   - blog
 tags: [pandas, python, api, index, series, dataframe]
 author: Ganesh Raman
-----
+---
 
 Pandas is well-known for its **intuitive and expressive API**. At the core of this usability lies the thoughtful design of three main abstractions: `Index`, `Series`, and `DataFrame`. Each of these was introduced with deliberate consistency to make data manipulation as fluid as writing Python itself.
 
