@@ -1,11 +1,9 @@
 ---
-
-layout: post
 title: "Understanding Java 8’s Stream API: Consumer and Supplier Interfaces"
 date: 2018-04-17
 categories: [blog]
 tags: [java, streams, api, consumer, supplier, functional]
-author: ganesh
+author: Ganesh Raman
 ---
 
 Java 8 introduced the **Stream API**, a major shift toward functional-style programming in Java. Among the key design elements that power this shift are the **functional interfaces** like `Consumer`, `Supplier`, and `Function`. While the Stream API itself gets much attention, the underlying design of these interfaces reveals an elegant model for **data production and consumption**.

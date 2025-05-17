@@ -3,8 +3,8 @@ title: "The Design Philosophy Behind NumPy’s API"
 date: 2018-03-17
 categories: [blog]
 tags: [numpy, python, api, design, performance, arrays]
-author: ganesh
-----
+author: Ganesh Raman
+---
 NumPy is often described as the **foundation of the scientific Python ecosystem**. But beyond performance and vectorization, what makes NumPy truly enduring is its **clean, minimal, and orthogonal API design** , shaped over years by necessity, clarity, and performance.
 
 ## Arrays as the First-Class Citizen
