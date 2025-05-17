@@ -1,7 +1,7 @@
 ---
-title:  "Understanding Pandas Memory Layout: Efficient Data Handling in Python"
-date:   2018-01-05
-categories: [Python, Data Engineering, Pandas]
+title: "Understanding Pandas Memory Layout: Efficient Data Handling in Python"
+date: 2018-01-05
+categories: [blog]
 tags: [pandas, python, memory, performance, dataframe, series]
 author: Ganesh Raman
 ----
