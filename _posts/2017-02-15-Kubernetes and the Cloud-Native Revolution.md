@@ -5,7 +5,6 @@ author: Ganesh Raman
 tags: [kubernetes, cloud-native, devops, distributed-systems, orchestration, golang, etcd]
 categories: [blog]
 ---
-
 # Kubernetes and the Cloud-Native Revolution
 
 The rise of **Kubernetes (K8s)** is transforming how I design, build, and operate modern applications. At its core, Kubernetes is not just a container orchestration system—it is a blueprint for building a **distributed operating system** for the cloud-native era.
