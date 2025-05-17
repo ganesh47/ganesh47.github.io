@@ -1,12 +1,10 @@
 ---
-
-layout: post
 title:  "Understanding Pandas Memory Layout: Efficient Data Handling in Python"
-date:   2018-01-05 09:00:00 +0530
+date:   2018-01-05
 categories: [Python, Data Engineering, Pandas]
 tags: [pandas, python, memory, performance, dataframe, series]
 author: Ganesh Raman
---------------
+----
 
 When working with large datasets in Python, **memory efficiency** becomes critical. One of the reasons **Pandas** remains a powerhouse for data manipulation is its underlying **block-based memory layout** — a design that provides both speed and scalability.
 
