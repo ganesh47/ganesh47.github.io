@@ -2,7 +2,7 @@
 title: "Using `pd.cut` for Stratified Binning in Pandas"
 date: 2019-01-28
 categories: [blog]
-tags: \[pandas, python, stratification, binning, cut, data-prep]
+tags: [pandas, python, stratification, binning, cut, data-prep]
 author: Ganesh Raman
 ---
 

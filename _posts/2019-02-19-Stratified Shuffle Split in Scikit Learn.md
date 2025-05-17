@@ -1,8 +1,8 @@
 ---
 title: "Stratified Shuffle Split in Scikit-Learn: Balanced Sampling Made Simple"
 date: 2019-02-19
-categories: \[blog]
-tags: \[scikit-learn, stratification, shuffle, model-selection, sampling, train-test]
+categories: [blog]
+tags: [scikit-learn, stratification, shuffle, model-selection, sampling, train-test]
 author: Ganesh Raman
 ---
 
