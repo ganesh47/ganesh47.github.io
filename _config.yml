@@ -26,6 +26,7 @@ url: "https://ganesh47.github.io"
 baseurl: ""  # if using root, else "/blog" etc.
 # Build settings
 markdown: kramdown
+words_per_minute: 400
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
