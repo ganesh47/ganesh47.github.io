@@ -61,7 +61,7 @@ comments:
 author:
   name   : "Ganesh Raman"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Technology and engineering leader with over a decade of experience building scalable, secure digital platforms across Cloud, AI/ML, SaaS, Data Platforms, and Cybersecurity. Currently leading Digital Business Models Development, driving cross-functional strategy, product innovation across global markets.Brings a blend of deep technical expertise and commercial insight—operating at the intersection of enterprise architecture, agile delivery, and digital transformation. This blog captures thoughts on system design, programming paradigms, and the practical realities of scaling engineering in complex environments."
+  bio    : "Technology and engineering leader with over a decade of experience building scalable, secure digital platforms across Cloud, AI/ML, SaaS, Data Platforms, and Cybersecurity. Currently leading Digital Business Models Development, enabling cross-functional strategy, product innovation across global markets.Brings a blend of deep technical expertise and commercial insight—operating at the intersection of enterprise architecture, agile delivery, and digital transformation. This blog captures thoughts on system design, programming paradigms, and the practical realities of scaling engineering in complex environments."
   links:
     - label: "About me"
       icon: "fas fa-file-signature"
