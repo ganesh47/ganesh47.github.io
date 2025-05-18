@@ -19,7 +19,7 @@ classes: wide
 
 ---
 
-# Amazon S3: From Simple Storage to Platform Monetization Engine (2006–2025) [Part -3]
+# Amazon S3: From Simple Storage to Platform Monetization Engine (2006–2025) [Sources & References]
 [Part-1](https://ganesh47.github.io/blog/Amazon-S3-From-Simple-Storage-to-Platform-Monetization-Engine_2006-2025-Part-1/)
 [Part-2](https://ganesh47.github.io/blog/Amazon-S3-From-Simple-Storage-to-Platform-Monetization-Engine_2006-2025-Part-2/)
 [Part-3](https://ganesh47.github.io/blog/Amazon-S3-From-Simple-Storage-to-Platform-Monetization-Engine_2006-2025-Part-3/)
