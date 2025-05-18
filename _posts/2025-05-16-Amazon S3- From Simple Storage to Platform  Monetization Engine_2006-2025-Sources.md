@@ -1,7 +1,7 @@
 ---
 title: "Amazon S3: From Simple Storage to Platform
- Monetization Engine (2006–2025) [Part -3]"
-date: 2025-05-16
+ Monetization Engine (2006–2025) [Sources & References]"
+date: 2025-05-15
 categories:
   - blog
 author: Ganesh Raman
