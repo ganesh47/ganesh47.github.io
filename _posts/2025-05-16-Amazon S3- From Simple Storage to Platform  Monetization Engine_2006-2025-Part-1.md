@@ -14,6 +14,7 @@ tags:
   - Cloud Monitization
   - Platform strategy
 toc: true
+author_profile: true
 ---
 
 # Amazon S3: From Simple Storage to Platform Monetization Engine (2006–2025)
