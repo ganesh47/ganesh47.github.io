@@ -1,6 +1,6 @@
 ---
 title: "Loss Functions in Linear Regression"
-date: 2025-05-18
+date: 2019-05-18
 categories: [blog]
 tags: [machine-learning, statistics, optimization, linear-regression]
 author: Ganesh Raman
