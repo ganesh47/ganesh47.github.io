@@ -15,6 +15,8 @@ tags:
   - Platform strategy
 toc: true
 author_profile: true
+classes: wide
+
 ---
 
 # Amazon S3: From Simple Storage to Platform Monetization Engine (2006–2025)
