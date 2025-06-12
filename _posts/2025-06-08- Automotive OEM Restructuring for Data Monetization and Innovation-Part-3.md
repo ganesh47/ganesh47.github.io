@@ -1,5 +1,5 @@
 ---
-title: "Automotive OEM Restructuring for Data Monetization and Innovation - Part 2"
+title: "Automotive OEM Restructuring for Data Monetization and Innovation - Part 3"
 date: 2025-06-12
 categories:
   - blog
@@ -17,7 +17,7 @@ classes: wide
 ---
 
 
-##  Automotive OEM Restructuring for Data Monetization and Innovation - Part 2
+##  Automotive OEM Restructuring for Data Monetization and Innovation - Part 3
 
 In [Part 1](https://ganesh47.github.io/blog/Automotive-OEM-Restructuring-for-Data-Monetization-and-Innovation-Part-1/) of this series, we explored how automakers globally — from Volkswagen and Mercedes-Benz to Tata Motors and Mahindra — spent the past decade reorganizing themselves into software-first, data-driven mobility companies. This shift redefined vehicles as upgradable platforms, positioning software and data at the core of future monetization.
 

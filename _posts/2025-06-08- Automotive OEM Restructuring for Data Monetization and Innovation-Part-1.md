@@ -67,3 +67,6 @@ Between 2015 and 2025, global and Indian automakers undertook a sweeping transfo
 Across Volkswagen’s CARIAD, Mercedes-Benz’s MB.OS, GM’s Ultifi, Toyota’s Woven, Hyundai’s ccOS, and India’s Tata and Mahindra efforts, the strategic intent is clear: internalize core software and data capabilities, control the vehicle-user interface, and unlock new post-sale revenue streams. The results are now tangible — with production vehicles running on in-house software platforms, OTA update ecosystems, and live examples of software-based monetization.
 
 * Further parts explore- Internal vs External Software & Data Efforts (comparitive matrix), Impact on external vendors & buy vs build dynamics, Org design & Innovation governance changes, New Monitisation Models *
+
+[Part-2](https://ganesh47.github.io/blog/Automotive-OEM-Restructuring-for-Data-Monetization-and-Innovation-Part-2/)
+[Part-3](https://ganesh47.github.io/blog/Automotive-OEM-Restructuring-for-Data-Monetization-and-Innovation-Part-3/)
