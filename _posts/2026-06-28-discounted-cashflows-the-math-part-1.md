@@ -1,6 +1,6 @@
 ---
 title: "Discounted Cash Flows: The Math Behind Every Indian Valuation"
-date: 2026-06-28 09:00:00
+date: 2026-06-28 00:00:00
 categories: [blog]
 author: Ganesh Raman
 tags: [Finance, DCF, Valuation, India, Investing, WACC]

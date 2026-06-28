@@ -1,6 +1,6 @@
 ---
 title: "Discounted Cash Flows in Action: Lending, Growth, and Capital Allocation in India"
-date: 2026-06-28 10:00:00
+date: 2026-06-28 00:00:00
 categories: [blog]
 author: Ganesh Raman
 tags: [Finance, Banking, NBFC, Lending, DCF, Capital Allocation, India]
