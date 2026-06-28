@@ -19,7 +19,20 @@ Part 1 of 2. Next: [DCF in Action: Lending, Growth, and Capital Allocation in In
 
 ## Summary
 
-Discounted Cash Flow (DCF) valuation is not a formula you memorize for an interview. It is a way of thinking about money, time, and risk that underpins every serious financial decision — from setting a home loan rate to pricing a ₹30,000 crore exchange IPO. This post builds the DCF model from scratch using current Indian market parameters: a 6.84% G-Sec risk-free rate (June 2026), Damodaran's 7.08% total equity risk premium for India (January 2026), and sector WACC benchmarks from the EY-NSE Cost of Capital Survey 2024. Part 2 of this series applies the same toolkit to lending businesses, NBFCs, and the NSE IPO valuation.
+Every financial decision you make already uses discounted cash flow logic, even if you have never heard the term.
+
+When a bank quotes you an EMI for a home loan, it is computing the present value of your future repayments and checking that they are worth more than the principal it hands you today. When a mutual fund analyst says a stock is "fairly valued at 45 times earnings," she has compressed a DCF model into a shorthand multiple. When the board of Reliance Industries approves a ₹2 lakh crore green energy programme on the promise of returns arriving in 2030 and 2035, they are (or should be) evaluating those future cash flows against what the money could earn today if deployed elsewhere.
+
+The central insight is simple: a rupee today is worth more than a rupee in the future, because today's rupee can be invested and grow. The question DCF answers precisely is: *how much more?* That depends on two things — how certain you are that the future cash flows will actually arrive, and what your best alternative use of capital earns. An FD at 7% sets a floor. Equity in a cyclical business must clear a much higher bar. DCF is the framework that makes this trade-off explicit and auditable, rather than absorbed unconsciously into "feels like a quality franchise at a reasonable price."
+
+This post builds the DCF model in four steps, each grounded in current Indian market numbers:
+
+1. **Free Cash Flow (FCF)** — What cash does the business actually generate, stripped of accounting choices? It is not profit, not EBITDA, and not reported EPS. Understanding why these differ is the single most important concept in valuation.
+2. **The Discount Rate (WACC)** — At what rate should future cash flows be discounted? This requires two Indian market anchors: the 10-year Government of India bond yield (6.84% as of June 2026), which sets the risk-free floor, and the additional return equity investors demand for taking on uncertainty — currently estimated at 7.08% for India by Prof. Aswath Damodaran of NYU Stern.
+3. **Terminal Value** — Businesses are not valued only for the next 5–10 years. Beyond the explicit forecast window, a terminal value formula captures everything else. This section explains why terminal value typically accounts for 60–80% of a company's estimated worth — and why a one-percentage-point change in the growth assumption can swing that number by hundreds of crores.
+4. **Sensitivity Analysis** — A single-number DCF is almost always wrong. The honest approach is a range, with the two most sensitive inputs — the discount rate and the long-run growth rate — stressed against each other. This section builds that table and explains what it reveals about the limits of precision in valuation.
+
+Numbers throughout are anchored to Indian market reality: the RBI's 125-basis-point rate-cut cycle (repo rate now at 5.25%), EY-NSE Cost of Capital Survey sector benchmarks, and a public Reliance Industries analyst model from November 2025. Part 2 of this series applies the same toolkit to the institutions that make money by explicitly pricing the time value of money: India's banks and NBFCs.
 
 ## Why Time Has a Price
 
@@ -37,9 +50,8 @@ Most investments, however, are not Government bonds. They carry risk: the possib
 
 The present value of any stream of future cash flows is:
 
-```
-PV = CF₁/(1+r)¹ + CF₂/(1+r)² + CF₃/(1+r)³ + ... + CFₙ/(1+r)ⁿ + TV/(1+r)ⁿ
-```
+**PV = CF₁/(1+r)¹ + CF₂/(1+r)² + CF₃/(1+r)³ + ... + CFₙ/(1+r)ⁿ + TV/(1+r)ⁿ**
+{: .notice--info}
 
 Where:
 - **CF₁, CF₂ … CFₙ** = free cash flows in years 1 through n
@@ -63,9 +75,8 @@ Two things are immediately apparent. First, the terminal value dominates: ₹85 
 
 The number in the numerator of every DCF term is **free cash flow to the firm (FCFF)**, not profit.
 
-```
-FCF = EBIT × (1 − Tax Rate) + D&A − ΔNWC − Capex
-```
+**FCF = EBIT × (1 − Tax Rate) + D&A − ΔNWC − Capex**
+{: .notice--info}
 
 Breaking this apart:
 
@@ -92,9 +103,8 @@ The EBITDA for the same company is ₹115 crore. The gap between ₹115 crore EB
 
 The discount rate is the blended rate of return required by all providers of capital — equity shareholders and debt holders — weighted by their share of the total capital structure.
 
-```
-WACC = (E/V) × Ke + (D/V) × Kd × (1 − t)
-```
+**WACC = (E/V) × Ke + (D/V) × Kd × (1 − t)**
+{: .notice--info}
 
 Where:
 - **E/V** = equity as a fraction of total enterprise value
@@ -107,9 +117,8 @@ Where:
 
 The Capital Asset Pricing Model (CAPM) is the standard approach:
 
-```
-Ke = Rf + β × ERP
-```
+**Ke = Rf + β × ERP**
+{: .notice--info}
 
 **Rf — Risk-Free Rate: 6.84%**
 
@@ -176,9 +185,8 @@ No business is valued only for the next 5 or 10 years. Beyond the explicit forec
 
 The standard approach in Indian practice is the **Gordon Growth Model**:
 
-```
-TV = FCFₙ × (1 + g) / (WACC − g)
-```
+**TV = FCFₙ × (1 + g) / (WACC − g)**
+{: .notice--info}
 
 Where **g** is the perpetual growth rate of free cash flow beyond year n.
 
@@ -222,9 +230,8 @@ What the model makes explicit is the *implied* assumption at market price: the m
 
 A point-estimate DCF is almost always wrong. The honest way to present a DCF is as a range. The two most sensitive inputs are WACC and terminal growth rate. The table below shows the **present value of terminal value only** (₹ crore), assuming Year 10 FCF = ₹100 crore. In practice, TV represents 60–80% of total enterprise value.
 
-```
-PV(TV) = FCF₁₀ × (1+g) / (WACC−g) / (1+WACC)^10
-```
+**PV(TV) = FCF₁₀ × (1+g) / (WACC−g) / (1+WACC)^10**
+{: .notice--info}
 
 | WACC \ TGR   | g = 2% | g = 3% | g = 4% |
 |--------------|--------|--------|--------|
