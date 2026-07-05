@@ -9,6 +9,7 @@ $right-sidebar-width-narrow: 50px !default;
 @import "minimal-mistakes";
 
 :root {
+  color-scheme: light;
   --ink: #141823;
   --ink-muted: #4f5b6b;
   --surface: #ffffff;
@@ -281,5 +282,63 @@ hr {
   .search-content__inner-wrap {
     max-width: var(--content-ultra);
     margin-inline: auto;
+  }
+}
+
+/* --- Notice / formula callout boxes ---------------------------------------
+   Explicit, high-contrast styling in the site palette. The theme's own
+   colours are technically fine, but declaring them here (with !important)
+   guarantees legibility even if a browser's auto-dark mode or an extension
+   tries to rewrite them into white-on-white. */
+.page__content {
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--success,
+  .notice--warning,
+  .notice--danger {
+    background-color: var(--surface) !important;
+    color: var(--ink) !important;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--brand);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+
+    strong,
+    b,
+    p,
+    li,
+    span {
+      color: var(--ink) !important;
+    }
+
+    code {
+      background: var(--surface-alt) !important;
+      color: var(--ink) !important;
+    }
+
+    a {
+      color: var(--brand) !important;
+    }
+  }
+
+  /* Formula boxes: bold single-line equations read best in monospace. */
+  .notice--info {
+    border-left-color: var(--brand);
+    font-size: 1.02em !important;
+
+    strong {
+      font-family: "JetBrains Mono", "SFMono-Regular", "Consolas", monospace;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .notice--warning {
+    border-left-color: var(--accent);
+  }
+
+  .notice--danger {
+    border-left-color: #b4402c;
   }
 }
