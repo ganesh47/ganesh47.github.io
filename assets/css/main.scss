@@ -186,21 +186,37 @@ code {
   background: #f7f3ed;
   border: 1px solid #e6ddd2;
   border-radius: 6px;
+  color: var(--ink);
   padding: 0.12rem 0.35rem;
 }
 
-pre {
-  background: #f7f3ed;
+pre,
+.highlight {
+  background: #f7f3ed !important;
   border: 1px solid #e6ddd2;
   border-radius: 14px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  color: var(--ink) !important;
+  overflow-x: auto;
   padding: 1.1rem 1.25rem;
 }
 
-pre code {
-  background: transparent;
+pre code,
+.highlight code,
+.highlight pre {
+  background: transparent !important;
   border: 0;
+  color: inherit !important;
   padding: 0;
+}
+
+.highlight table,
+.highlight tbody,
+.highlight tr,
+.highlight td,
+.highlight span {
+  background: transparent !important;
+  color: inherit !important;
 }
 
 hr {
