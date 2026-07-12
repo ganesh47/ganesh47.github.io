@@ -1,22 +1,29 @@
 ---
 title: "The Two-Number Truth: Operating Ratio, Credit Cost, and Why They Tell Opposite Sides of the Same DCF Story"
 date: 2026-07-05 00:00:00 UTC
-categories: [finance, investing]
-tags: [dcf, banking, operating-ratio, credit-cost, indian-markets, valuation]
+categories: [blog]
+author: Ganesh Raman
+tags: [Finance, Banking, DCF, Operating-Ratio, Credit-Cost, India, Investing]
+toc: true
+toc_sticky: true
+author_profile: true
+classes: wide
 excerpt: "A lender's Cost-to-Income Ratio tells you how efficiently the machine runs. It says nothing about whether the machine's output actually arrives as cash. This post connects operating efficiency to DCF valuation through the lens of Indian banks and NBFCs — with worked examples and the specific data from cases where the ratio looked fine right before things went wrong."
 header:
   overlay_color: "#0f766e"
   overlay_filter: 0.55
-toc: true
-toc_sticky: true
+permalink: /blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/
 ---
 
-*This is Part 3 of a series on Discounted Cash Flow analysis applied to Indian markets.
-[Part 1](/blog/discounted-cash-flows-the-math-part-1/) covers the mathematics of DCF.
-[Part 2](/blog/discounted-cash-flows-india-lending-and-growth-part-2/) covers how Indian banks price loans and why lending institutions require a different valuation framework.
-This post builds the bridge between operational efficiency and long-run cash realization.*
+Series: Discounted Cash Flows: The Complete Indian Guide
 
----
+Series map: [Part 1](/blog/discounted-cash-flows-the-math-part-1/) \| [Part 2](/blog/discounted-cash-flows-india-lending-and-growth-part-2/) \| [Part 3](/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/)
+
+Part 3 of 3. Previous: [Discounted Cash Flows in Action: Lending, Growth, and Capital Allocation in India](/blog/discounted-cash-flows-india-lending-and-growth-part-2/)
+
+## Summary
+
+Part 1 built the DCF toolkit from scratch. Part 2 applied it to Indian lending institutions and showed why banks cannot be valued with standard FCFF. This post completes the picture: once you can value a bank, you need to know which of its operational metrics are leading indicators of cash realization and which are structural illusions. The answer comes down to two numbers — Cost-to-Income Ratio and Credit Cost Ratio — and why they must always be read together.
 
 ## The Machine That Leaks in Two Places
 
@@ -37,8 +44,6 @@ Where:
 - **Credit Cost Ratio** = provisions for bad loans as % of average advances — what CIR ignores
 
 CIR captures the first drain. Credit cost captures the second. A bank that optimises only on CIR is like a shopkeeper who counts receivables as income: her books look profitable for months, right up until the moment her customers stop paying.
-
----
 
 ## What CIR Actually Measures
 
@@ -77,8 +82,6 @@ A core banking platform built for five million customers costs almost the same t
 A bank growing from ₹1 lakh crore to ₹2 lakh crore in advances does NOT double its operating cost — the cost base might grow 15–20% while NII doubles. This structural advantage compounds across decades. HDFC Bank's ability to run at 40% CIR while a small finance bank runs at 70% CIR does not mean HDFC manages every rupee better — it means HDFC's fixed cost base is amortised over a vastly larger franchise.
 
 The practical implication: **low CIR can be the product of genuine efficiency or merely scale.** An analyst must distinguish the two. A small bank at 55% CIR growing at 25% per year will reach a lower CIR than a large bank at 42% growing at 8% — in five years, the denominator (NII) of the small bank will have grown enough to compress its CIR structurally. The valuation question is whether the credit quality of that rapid growth will hold.
-
----
 
 ## The Accrual Trap: Why CIR Looks Good Before the Crisis
 
@@ -136,8 +139,6 @@ What was Yes Bank's CIR doing during FY17–FY18? The available evidence is that
 {: .notice--info}
 
 This adds provisions back into the numerator. It answers: "If the bank had recognised credit losses in the same period as the income, what would efficiency look like?" A bank with 42% standard CIR and 2% credit cost added to the numerator will show a very different adjusted ratio than one with 42% CIR and 0.4% credit cost.
-
----
 
 ## The RoA Decomposition: Three Levers, One Number
 
@@ -198,8 +199,6 @@ System RoA trajectory:
 
 This creates an important current-year context: the system is in a rare period where both CIR (scale + digital efficiency) and credit cost (clean books after a decade of NPA resolution) are favourable simultaneously. The next cycle will test which banks have genuinely durable advantages vs which benefited from benign credit conditions.
 
----
-
 ## From RoA to DCF: Why Banks Are Valued Differently
 
 The standard DCF uses Free Cash Flow to the Firm (FCFF). For banks, this framework breaks down: the "operations" of a bank are inseparable from its liabilities (deposits are simultaneously the raw material and the funding). Leverage is the business model, not a financing choice.
@@ -247,8 +246,6 @@ Many Indian PSU banks traded below 0.5× book in 2014–2018 for the opposite re
 
 A bank that improves its credit cost ratio by 100 basis points — through better underwriting, early warning systems, or a shift toward lower-risk segments — can lift RoA from 1.2% to 2.2%, RoE from ~14% to ~26%, and justify a P/B re-rating from ~1× to ~3×. That is a 3× stock price change from a single operational improvement, achieved without touching the CIR at all. This is why credit quality is more value-accretive than pure efficiency gains for most Indian banks.
 
----
-
 ## The Operating Leverage Asymmetry
 
 Operating leverage in banking creates an asymmetric risk profile that the efficiency ratio alone does not capture.
@@ -265,8 +262,6 @@ And it often does: Bajaj Finance runs at ~35% CIR; Muthoot Finance at ~22%. Thes
 
 But the structural advantage disappears in a funding stress. When wholesale credit markets froze after the IL&FS default in September 2018, NBFC cost of funds spiked by 100–200 basis points precisely when their loan books were most stressed. The operating efficiency that appeared in normal times provided no buffer against liquidity risk — because CIR, however low, says nothing about the structure of liabilities.
 
----
-
 ## Delayed Cash Flow: The Core Tension in Lending DCF
 
 In a standard business, the accrual-to-cash timing gap is driven by working capital — receivables, payables, inventory — measured in weeks or months.
@@ -279,8 +274,6 @@ This is the fundamental reason why banks must be valued using through-cycle assu
 
 The risk premium embedded in a bank's cost of equity (Ke) should reflect the uncertainty of credit cost being higher than current levels. A bank with high loan book growth, a young average loan tenure, and no tested credit cycle history should command a higher Ke than an established lender. India's lending history from 2014–2022 — encompassing the PSB NPA cycle, the NBFC liquidity crisis, the microfinance stress waves — provides multiple case studies of what happens when this premium is priced too low.
 
----
-
 ## What Good Looks Like: The Private Bank Equilibrium
 
 The sustainable RoA for a well-run Indian private bank converges on **1.5–2.5%**, driven by:
@@ -292,8 +285,6 @@ The sustainable RoA for a well-run Indian private bank converges on **1.5–2.5%
 At 10–12× leverage, this produces **RoE of 15–24%** against a Ke of 13–15% — the spread that justifies P/B multiples of 2–4×.
 
 Lenders that structurally cannot reach this equilibrium — because their cost base is too high (building franchise) or their credit culture produces persistent credit costs above 2% — will trade below book value until one of those inputs changes. The PSU sector has demonstrated how long that can take: GNPA peaked at 14.6% in March 2018; by FY24, system-level credit costs had normalised and PSU bank profits had recovered to ₹1.41 lakh crore — but the CIR gap vs private banks remains, and so does the P/B discount.
-
----
 
 ## The Two Questions to Ask Before Any Bank Investment
 
@@ -308,8 +299,6 @@ A bank with excellent CIR but rising GNPA is running a clean engine on a leaking
 **Both ratios together, not either alone, tell the truth.** The kirana store owner who counts receivables as income looks profitable right up until the moment her customers stop paying. The lender whose CIR looks fine while credit costs are building looks well-run right up until the quarter when 90 days of accrued income reverses and provisions hit simultaneously.
 
 The Efficiency Lab tool linked below makes this decomposition interactive across 15 Indian banks and NBFCs. Select any entity to see its NIM broken down into operating drain, credit drain, and surviving RoA — and whether its current RoE earns above or below its cost of equity.
-
----
 
 *Tools referenced in this post:*
 - *[Efficiency Lab](https://ganesh47.github.io/india-dcf-explorer/#/efficiency-lab) — NIM decomposition, CIR vs RoA scatter, two-number truth grid for 15 Indian lenders*

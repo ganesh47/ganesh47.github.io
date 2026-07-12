@@ -13,9 +13,9 @@ permalink: /blog/discounted-cash-flows-india-lending-and-growth-part-2/
 
 Series: Discounted Cash Flows: The Complete Indian Guide
 
-Series map: [Part 1](/blog/discounted-cash-flows-the-math-part-1/) | [Part 2](/blog/discounted-cash-flows-india-lending-and-growth-part-2/)
+Series map: [Part 1](/blog/discounted-cash-flows-the-math-part-1/) \| [Part 2](/blog/discounted-cash-flows-india-lending-and-growth-part-2/) \| [Part 3](/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/)
 
-Part 2 of 2. Previous: [Discounted Cash Flows: The Math Behind Every Indian Valuation](/blog/discounted-cash-flows-the-math-part-1/)
+Part 2 of 3. Previous: [Discounted Cash Flows: The Math Behind Every Indian Valuation](/blog/discounted-cash-flows-the-math-part-1/) | Next: [The Two-Number Truth: Operating Ratio, Credit Cost, and DCF](/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/)
 
 ## Summary
 
