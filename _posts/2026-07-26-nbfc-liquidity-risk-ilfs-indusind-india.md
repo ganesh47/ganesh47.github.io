@@ -15,7 +15,9 @@ header:
 permalink: /blog/nbfc-liquidity-risk-ilfs-indusind/
 ---
 
-*Related: [Part 3 of the DCF series](/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/) — Operating Ratio and Credit Cost — mentioned in passing that "when wholesale credit markets froze after the IL&FS default in September 2018, NBFC cost of funds spiked by 100–200 basis points precisely when their loan books were most stressed." This post unpacks that sentence in full.*
+*Series map: [Part 1](/blog/discounted-cash-flows-the-math-part-1/) \| [Part 2](/blog/discounted-cash-flows-india-lending-and-growth-part-2/) \| [Part 3](/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/) \| **Liquidity Risk (this post)** \| [Part 4: What Is a Bank Worth?](/blog/bank-nbfc-valuation-pbv-excess-returns/)*
+
+*Part 3 mentioned in passing that "when wholesale credit markets froze after the IL&FS default in September 2018, NBFC cost of funds spiked by 100–200 basis points precisely when their loan books were most stressed." This post unpacks that sentence in full. Part 4 picks up the valuation consequences — how liquidity risk and credit cost enter the P/BV framework.*
 
 ## Summary
 
