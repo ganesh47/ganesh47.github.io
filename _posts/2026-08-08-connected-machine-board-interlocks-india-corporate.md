@@ -57,6 +57,8 @@ A board interlock occurs when a person serves as a director on two or more compa
 
 SEBI's 2019 regulations capped individual directorships at eight listed companies. Before this, the caps were looser: fifteen directorships under the Companies Act. In practice, India's most prominent independent directors routinely served on four to seven boards.
 
+Indian data quantifies this sharply. A 2015 study by Chakkingal found that **2.25% of Indian directors control board positions in companies accounting for 42% of all listed companies and 65.5% of the NIFTY 500's total market capitalisation**. The same study found that 78.5% of NSE-listed companies belong to a single giant connected component in the board interlock graph — meaning the network is effectively continuous across almost the entire market. A 2026 arXiv paper (Sancheti & Dey, 2603.22860) extended this to show that 58.6% of active Indian directors hold multiple board seats simultaneously, and 30% of listed companies have same-surname director pairs on their boards — a measurable signature of family concentration that governance reforms have not fully eliminated.
+
 This is not unique to India. Academic research on board interlocks (Mizruchi 1996, Davis & Greve 1997) consistently shows that:
 
 1. Interlocked boards adopt similar governance practices and executive compensation structures faster than non-interlocked boards
