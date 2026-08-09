@@ -26,7 +26,7 @@ Series map: [Part 1](/blog/connected-machine-board-interlocks-india-corporate/) 
 
 [Part 1](/blog/connected-machine-board-interlocks-india-corporate/) mapped 100 reviewed NIFTY 100 boards. That governance layer is strong because every published appointment points to a primary source.
 
-The financial layer is not equally complete. The current product contains company fundamentals, aggregate bank-health records, a partial auditor map, aggregate promoter/insider holding, and a small historical subsidiary layer. It does **not** contain borrower-level bank exposures, promoter pledge percentages, related-party transaction amounts, MCA charges, or IPO lock-in events.
+The financial layer is not equally complete. The current product contains company fundamentals, aggregate bank-health records, derived valuation multiples, a partial auditor map, aggregate promoter/insider holding, and a small historical subsidiary layer. It does **not** contain borrower-level bank exposures, promoter pledge percentages, related-party transaction amounts, MCA charges, or IPO lock-in events.
 
 That distinction matters. A bank’s total advances and gross NPA ratio can describe the bank. They cannot tell us how much it lent to a particular company. An aggregate insider-holding percentage can describe ownership concentration. It cannot tell us whether the holding is pledged.
 
@@ -42,6 +42,7 @@ The revised [Financial Flows view](https://ganesh47.github.io/india-corporate-gr
 | Auditor assignments | 36 company–auditor edges across 6 networks | Partial assurance-network exploration | A complete current statutory-auditor census or engagement-partner analysis |
 | Promoter/insider holding | 30 aggregate edges | A coarse ownership-concentration signal | SEBI promoter classification, pledges, encumbrances, or holder-level ownership |
 | Subsidiaries | 16 recurring relationships represented annually across 2021–25 | A small historical structural layer | A complete current subsidiary register |
+| Valuation multiples | 83 graph companies with a positive book value; 63 in the pinned NIFTY 100 | Price-to-book and price-to-sales computed from the same market-cap and fundamentals fields above | A judgement on whether a given multiple is justified |
 
 These layers are useful together only if their different dates, definitions, and source quality remain visible.
 
@@ -66,6 +67,14 @@ The [Financial Flows view](https://ganesh47.github.io/india-corporate-graph/#/fi
 These attributes can help frame questions. A company with high debt connected to several boards may deserve closer reading. A bank with improving NPA ratios may look different from one with worsening asset quality. But putting two attributes on adjacent nodes does not prove that one caused the other.
 
 For investment work, the graph is a discovery layer. The cited issuer report and financial statements remain the evidence.
+
+## A Valuation Multiple Is a Market Opinion, Not a Fact Check
+
+The [Financial Flows view](https://ganesh47.github.io/india-corporate-graph/#/financial-flows) also derives price-to-book and price-to-sales for the 83 graph companies with a positive book value, using the same market-cap, book-value, and revenue fields already cited above. No new data source is introduced; the multiples are arithmetic on figures the reader has already seen.
+
+The computed range is wide. Nykaa (FSN) trades at roughly 66× book and Nestlé India at roughly 58×; LIC Housing Finance trades at roughly 0.67× book and ONGC at roughly 0.81×. Two similarly leveraged non-bank lenders in the graph — Cholamandalam Investment and LIC Housing Finance, both carrying debt at more than six times book value — sit at opposite ends of this range, which is itself informative: leverage alone does not explain where the market prices a stock, and the gap is a prompt to read the [DCF series' P/BV and Excess Returns framework](/blog/bank-nbfc-valuation-pbv-excess-returns/) rather than a conclusion in itself.
+
+A high or low multiple is not, by itself, evidence of mispricing, quality, or risk. It reflects what the market is currently willing to pay relative to a backward-looking accounting figure. Treat it the same way as a betweenness score: a reason to look closer, not a verdict.
 
 ## Ownership Signals Are Not Pledge Data
 
@@ -111,7 +120,7 @@ Until these datasets exist, the interface should not imply that a visual path re
 
 ## Using the Explorer Without Overreading It
 
-1. Open [Financial Flows](https://ganesh47.github.io/india-corporate-graph/#/financial-flows) to compare available fundamentals and the six official bank-health records. Watch the coverage badges before comparing companies.
+1. Open [Financial Flows](https://ganesh47.github.io/india-corporate-graph/#/financial-flows) to compare available fundamentals, the six official bank-health records, and the derived valuation-multiple tab. Watch the coverage badges before comparing companies.
 2. Open [Group Lens](https://ganesh47.github.io/india-corporate-graph/#/group-lens) to inspect the mixture of board, subsidiary, ownership, and auditor observations attached to a named group. Keep the date and source layer visible.
 3. Open [Centrality](https://ganesh47.github.io/india-corporate-graph/#/centrality) to compare board-only rankings with the combined graph. A ranking change reveals sensitivity to the included relationship types.
 4. Open [Path Finder](https://ganesh47.github.io/india-corporate-graph/#/path-finder), select a relationship mode, and inspect every hop’s evidence. Alternative routes are useful hypotheses, not proof of money movement.
