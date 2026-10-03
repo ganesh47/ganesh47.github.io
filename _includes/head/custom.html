@@ -4,5 +4,7 @@
      Prevents Chrome/Edge "Auto Dark Mode for Web Contents" and dark-reader
      extensions from auto-inverting notice/formula boxes into white-on-white. -->
 <meta name="color-scheme" content="light" />
+{% if page.published == false %}<meta name="robots" content="noindex, nofollow" />{% endif %}
+{% if page.exhibit_stylesheet %}<link rel="stylesheet" href="{{ '/assets/css/highway-exhibits.css' | relative_url }}" />{% endif %}
 
 <!-- end custom head snippets -->

@@ -1,0 +1,20 @@
+.highway-chart { margin: 32px 0; }
+.highway-chart-scroll { max-width: 100%; overflow-x: auto; border: 1px solid var(--line); background: #fafbf8; }
+.highway-chart-scroll img { display: block; width: 100%; min-width: 640px; max-width: none; margin: 0; }
+.highway-chart figcaption { text-align: left; font-size: 14px; line-height: 1.6; color: var(--muted); margin: 10px 0 0; font-style: normal; }
+.highway-table-scroll { max-width: 100%; overflow-x: auto; margin: 32px 0; }
+.page__content .highway-exhibit { display: table; width: 100%; margin: 0; }
+.highway-exhibit caption { text-align: left; font-family: Georgia, "Times New Roman", serif; font-size: 20px; font-weight: bold; color: var(--ink); margin-bottom: 14px; width: min(720px, calc(100vw - 40px)); max-width: 100%; }
+.highway-scroll-hint { display: none; }
+.page__content .highway-exhibit tbody th { background: transparent; font-weight: normal; }
+.highway-exhibit .numeric { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.highway-table-scroll .table-scroll { margin: 0; }
+.highway-table-scroll .scroll-hint { margin: 10px 0 0; }
+.page__content .highway-exhibit th, .page__content .highway-exhibit td { min-width: 115px; }
+.page__content .highway-exhibit th:first-child { min-width: 120px; }
+.page__content .highway-exhibit caption + thead { border-top: 1px solid var(--line); }
+@media (max-width: 600px) {
+  .highway-table-scroll table caption { font-size: 19px; }
+  .highway-chart figcaption { font-size: 13px; }
+  .page__content .highway-scroll-hint { display: block; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 13px; color: var(--muted); margin-top: -22px; }
+}

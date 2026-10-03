@@ -1,0 +1,169 @@
+[
+  {
+    "id": 1,
+    "title": "Exhibit 1. NHAI’s five-year funding history",
+    "columns": [
+      "Financial year-end",
+      "Government capital",
+      "Borrowings including ADB"
+    ],
+    "rows": [
+      [
+        "FY2020",
+        "2,19,026.69",
+        "2,48,831.66"
+      ],
+      [
+        "FY2021",
+        "2,61,113.53",
+        "3,07,162.61"
+      ],
+      [
+        "FY2022",
+        "3,36,595.88",
+        "3,48,907.24"
+      ],
+      [
+        "FY2023",
+        "4,95,321.32",
+        "3,43,114.24"
+      ],
+      [
+        "FY2024",
+        "7,08,177.58",
+        "3,35,373.20"
+      ]
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Exhibit 2. The expanding NHIT portfolio",
+    "columns": [
+      "Financial year",
+      "Operating revenue",
+      "Closing book assets",
+      "Carrying borrowings",
+      "DPU, ₹/unit"
+    ],
+    "rows": [
+      [
+        "FY2022",
+        "139.61",
+        "7,548.98",
+        "1,465.38",
+        "0.7900"
+      ],
+      [
+        "FY2023",
+        "687.17",
+        "10,491.55",
+        "2,941.58",
+        "6.3714"
+      ],
+      [
+        "FY2024",
+        "943.91",
+        "27,410.34",
+        "11,734.49",
+        "6.6030"
+      ],
+      [
+        "FY2025",
+        "2,363.82",
+        "45,028.22",
+        "21,670.49",
+        "7.6710"
+      ],
+      [
+        "FY2026",
+        "4,274.07",
+        "50,993.58",
+        "25,039.15",
+        "11.3290"
+      ]
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Exhibit 3. FY2026 cash available for distribution",
+    "columns": [
+      "Reported bridge",
+      "₹ crore"
+    ],
+    "rows": [
+      [
+        "Trust NDCF before further adjustments",
+        "2,055.43"
+      ],
+      [
+        "Add unpaid zero-coupon-bond interest adjustment",
+        "78.40"
+      ],
+      [
+        "Add first debt-service-reserve release",
+        "93.61"
+      ],
+      [
+        "Add second debt-service-reserve release",
+        "6.80"
+      ],
+      [
+        "Adjusted cash available",
+        "**2,234.24**"
+      ]
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Exhibit 4. What the latest road observations can establish",
+    "columns": [
+      "Q1FY2027 observation",
+      "Reading the evidence"
+    ],
+    "rows": [
+      [
+        "Gandhidham–Mundra: reported PCU traffic −4%; revenue +1%",
+        "A traffic measure and revenue can move differently; issuer cites weaker multi-axle movement"
+      ],
+      [
+        "Palanpur–Abu Road: reported PCU traffic −3%",
+        "Issuer cites diversion after an alternative road became free; neighbouring Abu Road–Swaroopganj recorded +1%"
+      ],
+      [
+        "Muzaffarnagar–Haridwar: reported PCU traffic +37%",
+        "About 24% newly counted exempt traffic is cited; the increase cannot be treated as organic growth"
+      ]
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Exhibit 5. Technology scale and its evidence stage",
+    "columns": [
+      "Programme",
+      "Verified scope or estimate",
+      "Stage supported at the cutoff"
+    ],
+    "rows": [
+      [
+        "NHAI AI dashcams",
+        "About 40,000 km; weekly surveys",
+        "Announced scope; rollout initiated"
+      ],
+      [
+        "NHAI network survey vehicles",
+        "Up to 300 km/day; 10-day actionable reporting",
+        "Government-reported process performance"
+      ],
+      [
+        "NHIT traffic management across NWPPL and NEPPL",
+        "433.55 km; 457 TMCS camera units; 46 VIDES units",
+        "Tender specifications; some existing equipment separately identified"
+      ],
+      [
+        "NHIT Bahadarabad free-flow tolling",
+        "₹8 crore estimated capex, excluding GST",
+        "Two bidders technically qualified on 30 September; no final award or commissioning verified in the reviewed record"
+      ]
+    ]
+  }
+]
