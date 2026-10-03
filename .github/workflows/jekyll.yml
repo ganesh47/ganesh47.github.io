@@ -37,7 +37,7 @@ jobs:
         # https://github.com/ruby/setup-ruby/releases/tag/v1.298.0
         uses: ruby/setup-ruby@4dc28cf14d77b0afa6832d9765ac422dbf0dfedd # v1.298.0
         with:
-          ruby-version: '3.3' # Not needed with a .ruby-version file
+          ruby-version: '3.3.11'
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
@@ -45,13 +45,24 @@ jobs:
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
       - name: Audit gem dependencies
         run: |
-          gem install bundler-audit
-          bundle-audit check --update
+          bundle exec bundle-audit check --update
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Setup Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.14.0'
+      - name: Install locked search and test packages
+        run: |
+          npm install --global pnpm@12.8.1
+          pnpm install --frozen-lockfile
+      - name: Build the static article search index
+        run: pnpm index
+      - name: Verify routes, links and metadata
+        run: pnpm check
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0

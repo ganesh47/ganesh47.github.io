@@ -1,0 +1,14 @@
+---
+layout: archive
+title: Search
+description: Find a phrase, a system or a question across the articles.
+permalink: /search/
+---
+<form id="search-form" class="notebook-search" role="search">
+  <label for="search-query">Search the notebook</label><div class="search-query-row"><input id="search-query" name="q" type="search" placeholder="Try board interlocks, Kafka or cash flows" autocomplete="off"><button type="submit">Search</button></div>
+  <div class="search-filters"><div><label for="search-topic">Topic</label><select id="search-topic" name="topic"><option value="">All topics</option>{% for topic in site.data.topics %}<option>{{ topic.title }}</option>{% endfor %}</select></div><button type="reset">Reset search</button></div>
+</form>
+<p id="search-status" role="status" aria-live="polite">Enter a word or phrase, or select a topic.</p>
+<div id="search-results"></div>
+<noscript><p>Article search needs JavaScript. You can still <a href="{{ '/topics/' | relative_url }}">browse topics</a>, <a href="{{ '/writing/' | relative_url }}">all writing</a> or the <a href="{{ '/posts/' | relative_url }}">yearly archive</a>.</p></noscript>
+<script type="module" src="{{ '/assets/js/search.js' | relative_url }}"></script>

@@ -1,0 +1,18 @@
+- id: data-systems
+  title: Data & distributed systems
+  description: Storage, streaming, infrastructure and the systems beneath data products.
+- id: programming
+  title: Programming & runtimes
+  description: Types, concurrency, functional programming and the JVM.
+- id: machine-learning
+  title: Machine learning & statistics
+  description: Models, sampling, libraries and the mechanics of working with data.
+- id: ai-product
+  title: AI & product strategy
+  description: Software economics, platforms and the path from technology to useful products.
+- id: finance
+  title: Finance & corporate networks
+  description: Valuation, banking, governance and evidence from connected companies.
+- id: automotive
+  title: Automotive & mobility
+  description: Industry economics, software and data in the automotive ecosystem.

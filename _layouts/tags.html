@@ -1,0 +1,6 @@
+---
+layout: archive
+---
+{{ content }}
+<ul class="topic-index">{% for tag in site.data.tags %}<li><a href="#{{ tag.id }}">{{ tag.title }} ({{ tag.urls.size }})</a></li>{% endfor %}</ul>
+{% for tag in site.data.tags %}<section id="{{ tag.id }}" class="topic-section">{% for alias in tag.aliases %}<span id="{{ alias }}"></span>{% endfor %}<h2>{{ tag.title }}</h2>{% for post in site.posts %}{% if tag.urls contains post.url %}{% include article-row.html post=post %}{% endif %}{% endfor %}<a class="back-to-top" href="#page-title">Back to tags ↑</a></section>{% endfor %}

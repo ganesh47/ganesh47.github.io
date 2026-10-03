@@ -1,0 +1,62 @@
+name: Blog preview checks
+on:
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: blog-preview-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@4dc28cf14d77b0afa6832d9765ac422dbf0dfedd # v1.298.0
+        with:
+          ruby-version: '3.3.11'
+          bundler-cache: true
+      - name: Audit locked gems
+        run: bundle exec bundle-audit check --update
+      - name: Setup Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.14.0'
+      - name: Install locked packages
+        run: |
+          npm install --global pnpm@12.8.1
+          pnpm install --frozen-lockfile
+      - name: Build
+        run: |
+          bundle exec jekyll build
+          pnpm index
+          pnpm check
+        env:
+          JEKYLL_ENV: production
+      - name: Install Chromium
+        run: pnpm exec playwright install --with-deps chromium
+      - name: Browser and accessibility checks
+        run: pnpm test
+      - name: Save built preview artifact
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: blog-preview-${{ github.sha }}
+          path: _site/
+          include-hidden-files: true
+          retention-days: 14
+      - name: Save browser evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: blog-checks-${{ github.sha }}
+          path: |
+            test-results/
+            validation-results/
+            playwright-report/
+          retention-days: 14
