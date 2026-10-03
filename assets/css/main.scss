@@ -103,8 +103,9 @@ summary { cursor:pointer; min-height:44px; padding-block:10px; font-family:-appl
 .table-scroll table { display:table; margin:0; width:100%; }
 .table-scroll+.scroll-hint { font-size:11px; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--muted); margin-top:-20px; }
 code,pre,kbd,samp { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
-.page__content code { font-size:.8em; background:#efefea; color:#254435; border-radius:3px; }
-.page__content pre { font-size:.72em; line-height:1.65; background:#eff1ed; color:var(--ink); padding:18px; max-width:100%; overflow:auto; border:1px solid var(--line); border-radius:0; }
+.page__content code { font-size:max(.875rem,.8em); background:#efefea; color:#254435; border-radius:3px; }
+/* Rouge wrappers already reduce em sizing; use the root size for readable code. */
+.page__content pre { font-size:.875rem; line-height:1.65; background:#eff1ed; color:var(--ink); padding:18px; max-width:100%; overflow:auto; border:1px solid var(--line); border-radius:0; }
 .page__content pre code { background:transparent; color:inherit; font-size:inherit; padding:0; }
 .page__content .highlight { max-width:100%; background:#eff1ed; }
 .page__content blockquote { border-left:3px solid var(--accent); padding-left:24px; font-style:normal; color:var(--muted); }

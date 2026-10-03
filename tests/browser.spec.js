@@ -28,6 +28,8 @@ for (const width of [320,390,768,1280]) {
     const table=page.locator('.table-scroll').first(); await table.focus(); await expect(table).toBeFocused();
     await table.press('ArrowRight'); await noOverflow(page);
     await page.goto(old); await expect(page.locator('pre').first()).toBeVisible(); await page.locator('pre').first().focus(); await expect(page.locator('pre').first()).toBeFocused();
+    const codeSizes=await page.locator('.page__content code').evaluateAll(elements=>elements.map(el=>parseFloat(getComputedStyle(el).fontSize)));
+    expect(Math.min(...codeSizes)).toBeGreaterThanOrEqual(14);
     await page.goto('/'); await page.screenshot({path:info.outputPath(`home-${width}.png`),fullPage:true});
   });
 }
@@ -61,14 +63,14 @@ test('separate series navigation, keyboard and reduced motion',async({page})=>{
   await page.keyboard.press('Tab'); await page.keyboard.press('Enter'); await expect(page.locator('main')).toBeInViewport();
   expect(await page.locator('.masthead').evaluate(el=>getComputedStyle(el).animationName)).toBe('none');
 });
-test('no-JavaScript reading, mobile menu, contents and archive navigation',async({browser})=>{
-  const context=await browser.newContext({javaScriptEnabled:false,viewport:{width:320,height:740}});
-  const page=await context.newPage(); await page.goto('http://127.0.0.1:4315'+article);
+test('no-JavaScript reading, mobile menu, contents and archive navigation',async({browser,baseURL})=>{
+  const context=await browser.newContext({baseURL,javaScriptEnabled:false,viewport:{width:320,height:740}});
+  const page=await context.newPage(); await page.goto(article);
   await noOverflow(page); await expect(page.locator('.page__content')).toContainText('Bombay House');
   await page.locator('.reading-toc summary').click(); await expect(page.locator('.reading-toc nav')).toBeVisible();
   await page.locator('.mobile-nav summary').click(); await page.locator('.mobile-nav').getByRole('link',{name:'Writing',exact:true}).click();
   await expect(page.locator('h1')).toHaveText('Writing');
-  await page.goto('http://127.0.0.1:4315/search/'); await expect(page.getByRole('link',{name:'browse topics',exact:true})).toBeVisible(); await page.getByRole('link',{name:'browse topics',exact:true}).click(); await expect(page.locator('h1')).toHaveText('Topics'); await context.close();
+  await page.goto('/search/'); await expect(page.getByRole('link',{name:'browse topics',exact:true})).toBeVisible(); await page.getByRole('link',{name:'browse topics',exact:true}).click(); await expect(page.locator('h1')).toHaveText('Topics'); await context.close();
 });
 test('200% zoom equivalent reflow and long title',async({page},info)=>{
   // A 1280px viewport at 200% zoom exposes 640 CSS pixels (WCAG reflow test).
