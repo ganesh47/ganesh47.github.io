@@ -21,13 +21,13 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username: ganesh47
 repository: ganesh47/ganesh47.github.io
 minimal_mistakes_skin: default
-search: true
+search: false
 url: "https://ganesh47.github.io"
 baseurl: ""  # if using root, else "/blog" etc.
 # Build settings
 markdown: kramdown
 words_per_minute: 400
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@7c68402e079564981274be1d07da0387e3ebdf97
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -125,3 +125,25 @@ tag_archive:
   type: liquid
   path: /tags/
 
+
+# Public output contains site content only; build and maintenance files stay in Git.
+exclude:
+  - Agents.md
+  - AGENTS.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - pnpm-lock.yaml
+  - node_modules
+  - vendor
+  - scripts
+  - tests
+  - playwright.config.js
+  - test-results
+  - validation-results
+  - playwright-report
+  - .bundle
+  - .github
+footer_scripts:
+  - /assets/js/reading.js

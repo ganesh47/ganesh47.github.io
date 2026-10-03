@@ -1,0 +1,8 @@
+---
+layout: archive
+title: Topics
+description: Follow an idea across the notebook. These reading topics sit alongside the original tags and categories.
+permalink: /topics/
+---
+<ul class="topic-index">{% for topic in site.data.topics %}<li><a href="#{{ topic.id }}">{{ topic.title }}</a></li>{% endfor %}</ul>
+{% for topic in site.data.topics %}<section id="{{ topic.id }}" class="topic-section"><h2>{{ topic.title }}</h2><p>{{ topic.description }}</p>{% for post in site.posts %}{% assign discovery = site.data.discovery[post.url] %}{% if discovery.topic == topic.id %}{% include article-row.html post=post %}{% endif %}{% endfor %}<a class="back-to-top" href="#page-title">Back to topics ↑</a></section>{% endfor %}

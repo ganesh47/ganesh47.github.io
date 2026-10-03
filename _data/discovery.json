@@ -1,0 +1,299 @@
+{
+  "/blog/future-of-asset-intelligence-and-industrial-ai/": {
+    "topic": "ai-product",
+    "series": "industrial-ai",
+    "position": 4
+  },
+  "/blog/How-Elasticsearch-Made-TF-IDF-Scalable-Segments,-Lucene,-and-Life-Beyond-RDBMS/": {
+    "topic": "programming"
+  },
+  "/blog/Amazon-S3-From-Simple-Storage-to-Platform-Monetization-Engine_2006-2025-Part-3/": {
+    "topic": "ai-product",
+    "series": "s3",
+    "position": 3
+  },
+  "/blog/Beyond-YARN-Evolving-Alternatives-for-Distributed-Data-Processing-and-Storage/": {
+    "topic": "data-systems"
+  },
+  "/blog/ai-bubble-or-platform-shift-capital-costs-and-commoditized-software/": {
+    "topic": "ai-product",
+    "series": "industrial-ai",
+    "position": 1
+  },
+  "/blog/Stream-Processing-with-Spark-Streaming-Windows-into-Real-Time-Data/": {
+    "topic": "data-systems"
+  },
+  "/blog/Stratified-binning-with-pandas/": {
+    "topic": "machine-learning"
+  },
+  "/blog/Reimagining-Basel-III-Reporting-with-Scalable-Data-Lakes/": {
+    "topic": "finance"
+  },
+  "/blog/Apache-Spark-vs-Apache-Beam-Comparing-Distributed-Data-Processing-Models/": {
+    "topic": "data-systems"
+  },
+  "/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/": {
+    "topic": "finance",
+    "series": "dcf",
+    "position": 3
+  },
+  "/blog/Evolving-DSLs,-Type-Systems,-and-Learning-from-Haskell/": {
+    "topic": "programming"
+  },
+  "/blog/Docker-and-Linux-Containers-Simplifying-Software-Delivery-with-Kernel-Isolation/": {
+    "topic": "data-systems"
+  },
+  "/blog/Autonomous-decision-making-systems-The-next-frontier-in-AI-&-Data-Monetization/": {
+    "topic": "ai-product"
+  },
+  "/blog/Composability-through-Homomorphism-Writing-Better-Spark-DataFrames-in-Scala/": {
+    "topic": "programming"
+  },
+  "/blog/Parralel-streams-in-Java-8-A-new-era-for-concurrency-deisng/": {
+    "topic": "programming"
+  },
+  "/blog/Apache-Hive-in-2015-SQL-at-Scale,-Predicate-Pushdown,-and-the-Evolution-of-Big-Data-Warehousing/": {
+    "topic": "data-systems"
+  },
+  "/blog/Purely-Functional-Libraries-in-Scala-Composability-Meets-Trees/": {
+    "topic": "programming"
+  },
+  "/blog/Understanding-CAP-Theorem-Through-HBase-Trade-offs-in-Distributed-Data-Systems/": {
+    "topic": "data-systems"
+  },
+  "/blog/Understanding-YARN's-Resource-Manager-Scheduling-Policies-at-Scale/": {
+    "topic": "data-systems"
+  },
+  "/blog/Apache-Spark-on-YARN-Rethinking-Distributed-Processing-Beyond-MapReduce/": {
+    "topic": "data-systems"
+  },
+  "/blog/Hyper-Personalisation-The-next-frontier-in-customer-experience/": {
+    "topic": "ai-product"
+  },
+  "/blog/Amazon-S3-From-Simple-Storage-to-Platform-Monetization-Engine_2006-2025-Part-2/": {
+    "topic": "ai-product",
+    "series": "s3",
+    "position": 2
+  },
+  "/blog/Data-Governance-in-Hadoop-Policies,-Rules,-and-Control-in-Data-Lakes/": {
+    "topic": "data-systems"
+  },
+  "/blog/Basel-III-Liquidity-Ratios-LCR-and-NSFR-Explained/": {
+    "topic": "finance"
+  },
+  "/blog/Kafka-and-Zero-Copy-High-Throughput-Messaging-via-Linux-Kernel-Optimizations/": {
+    "topic": "data-systems"
+  },
+  "/blog/Understanding-Homomorphic-Types-in-Haskell-Practical-Abstractions-from-Deep-Theory/": {
+    "topic": "programming"
+  },
+  "/blog/Understanding-Normal-Forms-in-Relational-Databases-Structure,-Storage,-and-Performance/": {
+    "topic": "data-systems"
+  },
+  "/blog/connected-machine-board-interlocks-india-corporate/": {
+    "topic": "finance",
+    "series": "corporate-graph",
+    "position": 1
+  },
+  "/blog/Git-as-a-Distributed-System-Internals,-Object-Graphs,-and-Why-the-DAG-Matters/": {
+    "topic": "programming"
+  },
+  "/blog/Statistical-significance-in-linear-regression-R-R2-p-value/": {
+    "topic": "machine-learning"
+  },
+  "/blog/Why-AWS-S3-Sets-the-Benchmark-for-Cloud-Object-Storage/": {
+    "topic": "data-systems"
+  },
+  "/blog/Efficient-Offset-Management-in-Kafka-Using-HBase/": {
+    "topic": "programming"
+  },
+  "/blog/follow-the-money-lending-networks-india/": {
+    "topic": "finance",
+    "series": "corporate-graph",
+    "position": 2
+  },
+  "/blog/nbfc-liquidity-risk-ilfs-indusind/": {
+    "topic": "finance",
+    "series": "dcf",
+    "position": 5
+  },
+  "/blog/Composable-Workflows-and-Commodity-Compute-The-New-Data-Engineering-Stack-in-2016/": {
+    "topic": "data-systems"
+  },
+  "/blog/HDFS-Replication-and-Append-Only-Patterns-The-Foundation-of-Scalable-Distributed-Storage/": {
+    "topic": "programming"
+  },
+  "/blog/Infinite-Data-Structures-and-Transcendental-Thinking-in-Haskell/": {
+    "topic": "finance"
+  },
+  "/blog/Numpy-API-Design/": {
+    "topic": "machine-learning"
+  },
+  "/blog/discounted-cash-flows-india-lending-and-growth-part-2/": {
+    "topic": "finance",
+    "series": "dcf",
+    "position": 2
+  },
+  "/blog/Kafka-Consumer-Models-and-Zookeeper-Quorums-Decoupling-for-Scale-and-Simplicityl/": {
+    "topic": "programming"
+  },
+  "/blog/Linear-Regression-Elegant-Simplicity-for-Real-World-Problems/": {
+    "topic": "machine-learning"
+  },
+  "/blog/Understanding-Garbage-Collection-in-the-HotSpot-JVM-A-Comparison-of-Algorithms/": {
+    "topic": "programming"
+  },
+  "/blog/Pandas-API-Design/": {
+    "topic": "machine-learning"
+  },
+  "/blog/Basel-III-and-the-Case-for-a-Unified-Data-Strategy-in-Banking/": {
+    "topic": "finance"
+  },
+  "/blog/Kubernetes-vs-Linux-Scheduling-Unpacking-the-Complexity-of-Distributed-Scheduling/": {
+    "topic": "data-systems"
+  },
+  "/blog/Automotive-OEM-Restructuring-for-Data-Monetization-and-Innovation-Part-1/": {
+    "topic": "automotive",
+    "series": "automotive-oem",
+    "position": 1
+  },
+  "/blog/Inside-Spark-1.4-How-Akka-Powers-Coordination-and-Scheduling/": {
+    "topic": "data-systems"
+  },
+  "/blog/JVM-Bytecode-Tuning-Performance,-Hotspot-and-the-case-for-mechanical-sympathy/": {
+    "topic": "programming"
+  },
+  "/blog/Understanding-Linux-cgroups-The-Foundation-of-Resource-Isolation-in-LXC-date-2017-02-10-author-Ganesh-Raman-tags-linux,-containers,-lxc,-cgroups,-system-internals,-kernel,-process-isolation-categories/": {
+    "topic": "data-systems"
+  },
+  "/blog/Scikit's-test-train-split-and-why-its-under-model-selection/": {
+    "topic": "machine-learning"
+  },
+  "/blog/YARN,-Data-Local-Compute,-and-the-JVM-Rethinking-Distributed-Execution-Beyond-Oracle-RAC/": {
+    "topic": "programming"
+  },
+  "/blog/Understanding-Pandas-Memory-Layout-Efficient-Data-handling-in-python/": {
+    "topic": "machine-learning"
+  },
+  "/blog/Amazon-S3-From-Simple-Storage-to-Platform-Monetization-Engine_2006-2025-Sources/": {
+    "topic": "ai-product",
+    "series": "s3",
+    "position": 4
+  },
+  "/blog/Global-Automotive-Industry-Sentiments-Mid-2025-Part-2-Costs-&-Macros/": {
+    "topic": "automotive",
+    "series": "automotive-2025",
+    "position": 2
+  },
+  "/blog/bombay-house-tata-board-graph/": {
+    "topic": "finance",
+    "series": "corporate-graph",
+    "position": 3
+  },
+  "/blog/Automotive-OEM-Restructuring-for-Data-Monetization-and-Innovation-Part-2/": {
+    "topic": "automotive",
+    "series": "automotive-oem",
+    "position": 2
+  },
+  "/blog/Operationalizing-Machine-Learning-with-SparkML-on-YARN/": {
+    "topic": "programming"
+  },
+  "/blog/infrastructure-inequality-power-silicon-and-capital/": {
+    "topic": "ai-product",
+    "series": "industrial-ai",
+    "position": 3
+  },
+  "/blog/Understanding-Basel-III-Capital-Ratios-Tier-1-and-Tier-2-Explained/": {
+    "topic": "finance"
+  },
+  "/blog/Automotive-OEM-Restructuring-for-Data-Monetization-and-Innovation-Part-3/": {
+    "topic": "automotive",
+    "series": "automotive-oem",
+    "position": 3
+  },
+  "/blog/The-Hadoop-Revolution-Open-Source,-Distributed-Compute,-and-the-Rise-of-the-Data-Engineer/": {
+    "topic": "data-systems"
+  },
+  "/blog/Logistic-Regression-with-SparkML-Practical-Classification-in-Scala/": {
+    "topic": "programming"
+  },
+  "/blog/Apache-Oozie-and-YARN-Building-Scalable,-Reproducible-DAG-Based-Data-Workflows/": {
+    "topic": "programming"
+  },
+  "/blog/Crash-Consistency-and-File-Systems-Insights-from-the-OSDI-2014-Study/": {
+    "topic": "data-systems"
+  },
+  "/blog/Kubernetes-and-the-Cloud-Native-Revolution/": {
+    "topic": "data-systems"
+  },
+  "/blog/Solution-Selling-and-Evolutionary-Architecture-Discovering-What-Customers-Really-Need/": {
+    "topic": "ai-product"
+  },
+  "/blog/Apache-Hive,-Predicate-Pushdown,-and-the-Challenge-of-Small-Files-at-Petabyte-Scale/": {
+    "topic": "data-systems"
+  },
+  "/blog/Immutable-Types-in-Scala-Why-They-Matter-and-How-to-Use-Them-Right/": {
+    "topic": "programming"
+  },
+  "/blog/Error-Handling-and-Recovery-with-Akka-Actors-Scalable-Resilience-Inspired-by-Erlang/": {
+    "topic": "programming"
+  },
+  "/blog/ADTs,-GADTs,-and-the-Architecture-of-Distributed-Computation/": {
+    "topic": "programming"
+  },
+  "/blog/Amazon-S3-From-Simple-Storage-to-Platform-Monetization-Engine_2006-2025-Part-1/": {
+    "topic": "ai-product",
+    "series": "s3",
+    "position": 1
+  },
+  "/blog/Change-Data-Capture-for-Enterprise-Data-Lakes-Scalable-Compliance-in-Global-Banking/": {
+    "topic": "finance"
+  },
+  "/blog/Stratified-Shuffle-Split-in-Scikit-Learn/": {
+    "topic": "machine-learning"
+  },
+  "/blog/Bytecode-Instrumentation-with-ASM-Modifying-Java-and-Scala-Without-Touching-the-Code/": {
+    "topic": "programming"
+  },
+  "/blog/Understanding-Java-8-Stream-API-with-consumers-and-suppliers/": {
+    "topic": "programming"
+  },
+  "/blog/Transactional-Memory-and-Functional-Programming-Scalable-Concurrency-in-Haskell-and-Beyond/": {
+    "topic": "programming"
+  },
+  "/blog/discounted-cash-flows-the-math-part-1/": {
+    "topic": "finance",
+    "series": "dcf",
+    "position": 1
+  },
+  "/blog/bank-nbfc-valuation-pbv-excess-returns/": {
+    "topic": "finance",
+    "series": "dcf",
+    "position": 4
+  },
+  "/blog/Securing-Hadoop-with-Kerberos-Why-Enterprise-Security-Begins-with-Identity/": {
+    "topic": "data-systems"
+  },
+  "/blog/Oracle-Query-Tuning-and-Performance-Engineering/": {
+    "topic": "data-systems"
+  },
+  "/blog/Global-Automotive-Industry-Sentiments-Mid-2025-Part-1-Rebounding-Volumes/": {
+    "topic": "automotive",
+    "series": "automotive-2025",
+    "position": 1
+  },
+  "/blog/quality-capture-the-new-moat-as-software-commoditizes/": {
+    "topic": "ai-product",
+    "series": "industrial-ai",
+    "position": 2
+  },
+  "/blog/Loss-functions-linear-regression/": {
+    "topic": "machine-learning"
+  },
+  "/blog/Jepsen-and-the-Hard-Truth-About-Fault-Tolerance-in-Distributed-Systems/": {
+    "topic": "programming"
+  },
+  "/blog/Inside-HBase-Maintenance-Compactions,-MemStores,-and-Running-on-HDFS/": {
+    "topic": "data-systems"
+  }
+}

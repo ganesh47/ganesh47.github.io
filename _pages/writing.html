@@ -1,0 +1,8 @@
+---
+layout: archive
+title: Writing
+description: Essays and notes, newest first. Follow a topic or read through a series.
+permalink: /writing/
+---
+<p class="browse-links"><a href="{{ '/topics/' | relative_url }}">Browse topics</a><a href="{{ '/series/' | relative_url }}">Read a series</a><a href="{{ '/posts/' | relative_url }}">Yearly archive</a><a href="{{ '/search/' | relative_url }}">Search the notebook</a></p>
+{% for post in site.posts %}{% include article-row.html post=post excerpt=true %}{% endfor %}

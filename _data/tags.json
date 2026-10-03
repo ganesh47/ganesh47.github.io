@@ -1,0 +1,1722 @@
+[
+  {
+    "id": "2016-trends",
+    "title": "2016 Trends",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "abstractions",
+    "title": "Abstractions",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "access-control",
+    "title": "Access control",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "access-patterns",
+    "title": "Access patterns",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "active-directory",
+    "title": "Active directory",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "actors",
+    "title": "Actors",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "adts",
+    "title": "ADTs",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "ai",
+    "title": "AI",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "akka",
+    "title": "Akka",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "algebraic-structures",
+    "title": "Algebraic Structures",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "algorithmic-semantics",
+    "title": "Algorithmic Semantics",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "alm",
+    "title": "ALM",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "apache-beam",
+    "title": "Apache beam",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "apache-hive",
+    "title": "Apache Hive",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "apache-kafka",
+    "title": "Apache Kafka",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "apache-oozie",
+    "title": "Apache Oozie",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "apache-spark",
+    "title": "Apache Spark",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "api",
+    "title": "Api",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "append-only",
+    "title": "Append-Only",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "architecture",
+    "title": "Architecture",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "arrays",
+    "title": "Arrays",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "asm",
+    "title": "ASM",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "asset-intelligence",
+    "title": "Asset Intelligence",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "audit",
+    "title": "Audit",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "automotive",
+    "title": "Automotive",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "automous-decision-making-systems",
+    "title": "Automous Decision Making Systems",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "availability",
+    "title": "Availability",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "aws",
+    "title": "AWS",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "bajaj-finance",
+    "title": "Bajaj-Finance",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "banking",
+    "title": "Banking",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "banking-technology",
+    "title": "Banking technology",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "basel-iii",
+    "title": "Basel iii",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "batch",
+    "title": "Batch",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "best-practices",
+    "title": "Best practices",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "big-data",
+    "title": "Big Data",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "binning",
+    "title": "Binning",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "board-interlocks",
+    "title": "Board-Interlocks",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "business-models",
+    "title": "Business Models",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "bytecode",
+    "title": "Bytecode",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "cap-theorem",
+    "title": "CAP Theorem",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "capacity-scheduler",
+    "title": "Capacity Scheduler",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "capital",
+    "title": "Capital",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "capital-adequacy",
+    "title": "Capital adequacy",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "capital-allocation",
+    "title": "Capital Allocation",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "cdc",
+    "title": "CDC",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "cgroups",
+    "title": "Cgroups",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "change-data-capture",
+    "title": "Change Data Capture",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "classification",
+    "title": "Classification",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "cloud-monetization",
+    "title": "Cloud monetization",
+    "aliases": [
+      "cloud-monitization"
+    ],
+    "urls": []
+  },
+  {
+    "id": "cloud-storage",
+    "title": "Cloud storage",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "cloud-native",
+    "title": "Cloud-native",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "cluster-orchestration",
+    "title": "Cluster Orchestration",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "commoditization",
+    "title": "Commoditization",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "compaction",
+    "title": "Compaction",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "compliance",
+    "title": "Compliance",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "composability",
+    "title": "Composability",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "composable-workflows",
+    "title": "Composable Workflows",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "concurrency",
+    "title": "Concurrency",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "conflict-resolution",
+    "title": "Conflict-resolution",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "consistency",
+    "title": "Consistency",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "consumer",
+    "title": "Consumer",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "consumer-groups",
+    "title": "Consumer Groups",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "containers",
+    "title": "Containers",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "corporate-governance",
+    "title": "Corporate-Governance",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "crash-consistency",
+    "title": "Crash consistency",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "credit-cost",
+    "title": "Credit-Cost",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "credit-risk",
+    "title": "Credit-Risk",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "customer-discovery",
+    "title": "Customer discovery",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "customer-experience",
+    "title": "Customer Experience",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "cut",
+    "title": "Cut",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "dag",
+    "title": "DAG",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "dag-workflows",
+    "title": "DAG Workflows",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "data-engineering",
+    "title": "Data Engineering",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "data-governance",
+    "title": "Data governance",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "data-lake",
+    "title": "Data Lake",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "data-lakes",
+    "title": "Data Lakes",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "data-locality",
+    "title": "Data Locality",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "data-monetization",
+    "title": "Data monetization",
+    "aliases": [
+      "data-monitization"
+    ],
+    "urls": []
+  },
+  {
+    "id": "data-pipelines",
+    "title": "Data Pipelines",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "data-processing",
+    "title": "Data processing",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "data-science",
+    "title": "Data Science",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "data-strategy",
+    "title": "Data strategy",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "data-warehousing",
+    "title": "Data Warehousing",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "data-prep",
+    "title": "Data-prep",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "data-structures",
+    "title": "Data-structures",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "database",
+    "title": "Database",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "dataframe",
+    "title": "Dataframe",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "dataframes",
+    "title": "DataFrames",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "dcf",
+    "title": "DCF",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "decoupled-architectures",
+    "title": "Decoupled Architectures",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "dependent-types",
+    "title": "Dependent Types",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "design",
+    "title": "Design",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "devops",
+    "title": "Devops",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "digital",
+    "title": "Digital",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "distributed-compute",
+    "title": "Distributed Compute",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "distributed-computing",
+    "title": "Distributed Computing",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "distributed-file-systems",
+    "title": "Distributed File Systems",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "distributed-systems",
+    "title": "Distributed Systems",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "distributed-training",
+    "title": "Distributed Training",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "docker",
+    "title": "Docker",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "dsls",
+    "title": "DSLs",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "dvcs",
+    "title": "DVCS",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "elasticsearch",
+    "title": "Elasticsearch",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "energy",
+    "title": "Energy",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "enterprise-architecture",
+    "title": "Enterprise Architecture",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "enterprise-design",
+    "title": "Enterprise design",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "erlang",
+    "title": "Erlang",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "etcd",
+    "title": "Etcd",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "excess-returns",
+    "title": "Excess-Returns",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "fair-scheduler",
+    "title": "Fair Scheduler",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "fault-tolerance",
+    "title": "Fault Tolerance",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "file-systems",
+    "title": "File Systems",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "filesystems",
+    "title": "Filesystems",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "finance",
+    "title": "Finance",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "forkjoin",
+    "title": "Forkjoin",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "fp",
+    "title": "Fp",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "functional",
+    "title": "Functional",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "functional-programming",
+    "title": "Functional Programming",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "gadts",
+    "title": "GADTs",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "garbage-collection",
+    "title": "Garbage collection",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "git",
+    "title": "Git",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "golang",
+    "title": "Golang",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "graph-analysis",
+    "title": "Graph-Analysis",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "graph-theory",
+    "title": "Graph-Theory",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "hadoop",
+    "title": "Hadoop",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "haskell",
+    "title": "Haskell",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "hbase",
+    "title": "HBase",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "hdfc-bank",
+    "title": "HDFC-Bank",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "hdfs",
+    "title": "HDFS",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "hive",
+    "title": "Hive",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "homomorphism",
+    "title": "Homomorphism",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "hortonworks",
+    "title": "Hortonworks",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "hotspot",
+    "title": "Hotspot",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "icici-bank",
+    "title": "ICICI-Bank",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "il-fs",
+    "title": "IL-FS",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "immutability",
+    "title": "Immutability",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "in-memory-computing",
+    "title": "In-Memory Computing",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "index",
+    "title": "Index",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "india",
+    "title": "India",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "indusind",
+    "title": "IndusInd",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "industrial",
+    "title": "Industrial",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "infinite-structures",
+    "title": "Infinite Structures",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "infrastructure",
+    "title": "Infrastructure",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "instrumentation",
+    "title": "Instrumentation",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "investing",
+    "title": "Investing",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "jails",
+    "title": "Jails",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "java",
+    "title": "Java",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "jepsen",
+    "title": "Jepsen",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "jit",
+    "title": "JIT",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "jvm",
+    "title": "JVM",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "kafka",
+    "title": "Kafka",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "kerberos",
+    "title": "Kerberos",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "kernel",
+    "title": "Kernel",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "kubernetes",
+    "title": "Kubernetes",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "lazy-evaluation",
+    "title": "Lazy Evaluation",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "lcr",
+    "title": "Lcr",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "ldap",
+    "title": "Ldap",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "lending",
+    "title": "Lending",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "libraries",
+    "title": "Libraries",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "linear-regression",
+    "title": "Linear-regression",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "linux",
+    "title": "Linux",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "linux-kernel",
+    "title": "Linux Kernel",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "liquidity",
+    "title": "Liquidity",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "liquidity-risk",
+    "title": "Liquidity-Risk",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "logistic-regression",
+    "title": "Logistic Regression",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "lucene",
+    "title": "Lucene",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "lxc",
+    "title": "Lxc",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "machine-learning",
+    "title": "Machine Learning",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "maintenance",
+    "title": "Maintenance",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "mapreduce",
+    "title": "MapReduce",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "markets",
+    "title": "Markets",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "mechanical-sympathy",
+    "title": "Mechanical Sympathy",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "memory",
+    "title": "Memory",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "memory-management",
+    "title": "Memory management",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "mesos",
+    "title": "Mesos",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "messaging",
+    "title": "Messaging",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "messaging-systems",
+    "title": "Messaging Systems",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "mission-control",
+    "title": "Mission Control",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "ml",
+    "title": "Ml",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "ml-pipelines",
+    "title": "ML Pipelines",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "model-selection",
+    "title": "Model-selection",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "namenode",
+    "title": "NameNode",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "nbfc",
+    "title": "NBFC",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "network-analysis",
+    "title": "Network-Analysis",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "normalization",
+    "title": "Normalization",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "nosql",
+    "title": "NoSQL",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "nsfr",
+    "title": "Nsfr",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "numpy",
+    "title": "Numpy",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "object-storage",
+    "title": "Object storage",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "offset-access",
+    "title": "Offset Access",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "offset-management",
+    "title": "Offset Management",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "open-source",
+    "title": "Open Source",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "operating-ratio",
+    "title": "Operating-Ratio",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "optimization",
+    "title": "Optimization",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "optimizer",
+    "title": "Optimizer",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "oracle",
+    "title": "Oracle",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "oracle-rac",
+    "title": "Oracle RAC",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "orchestration",
+    "title": "Orchestration",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "osdi",
+    "title": "Osdi",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "ownership",
+    "title": "Ownership",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "p-value",
+    "title": "P-value",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "p-bv",
+    "title": "P/BV",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "pandas",
+    "title": "Pandas",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "parallel",
+    "title": "Parallel",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "partition-tolerance",
+    "title": "Partition Tolerance",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "performance",
+    "title": "Performance",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "performance-engineering",
+    "title": "Performance Engineering",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "performance-monitoring",
+    "title": "Performance Monitoring",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "performance-tuning",
+    "title": "Performance tuning",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "personlisation",
+    "title": "Personlisation",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "platform-strategy",
+    "title": "Platform strategy",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "postgresql",
+    "title": "PostgreSQL",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "predicate-pushdown",
+    "title": "Predicate Pushdown",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "predictive-analytics",
+    "title": "Predictive Analytics",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "process-isolation",
+    "title": "Process-isolation",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "product-thinking",
+    "title": "Product thinking",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "productivity",
+    "title": "Productivity",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "python",
+    "title": "Python",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "quality",
+    "title": "Quality",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "query-hints",
+    "title": "Query Hints",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "query-optimization",
+    "title": "Query Optimization",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "r-squared",
+    "title": "R-squared",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "rdbms",
+    "title": "RDBMS",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "real-world-abstractions",
+    "title": "Real-World Abstractions",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "realtime",
+    "title": "Realtime",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "reconciliation",
+    "title": "Reconciliation",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "regulatory-reporting",
+    "title": "Regulatory reporting",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "relational",
+    "title": "Relational",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "reliability",
+    "title": "Reliability",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "replication",
+    "title": "Replication",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "research",
+    "title": "Research",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "resilience",
+    "title": "Resilience",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "resource-management",
+    "title": "Resource Management",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "resource-manager",
+    "title": "Resource Manager",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "retention",
+    "title": "Retention",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "s3",
+    "title": "S3",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "sampling",
+    "title": "Sampling",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "sbt",
+    "title": "SBT",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "scala",
+    "title": "Scala",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "scalability",
+    "title": "Scalability",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "scheduling",
+    "title": "Scheduling",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "scikit-learn",
+    "title": "Scikit-learn",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "search-engines",
+    "title": "Search Engines",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "security",
+    "title": "Security",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "series",
+    "title": "Series",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "shuffle",
+    "title": "Shuffle",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "simple-models",
+    "title": "Simple Models",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "small-files",
+    "title": "Small Files",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "software",
+    "title": "Software",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "software-transactional-memory",
+    "title": "Software Transactional Memory",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "solution-selling",
+    "title": "Solution selling",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "spark",
+    "title": "Spark",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "sparkml",
+    "title": "SparkML",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "sql-on-hadoop",
+    "title": "SQL on Hadoop",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "statistics",
+    "title": "Statistics",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "stm",
+    "title": "STM",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "storage",
+    "title": "Storage",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "strategy",
+    "title": "Strategy",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "stratification",
+    "title": "Stratification",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "stream-processing",
+    "title": "Stream Processing",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "streaming",
+    "title": "Streaming",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "streams",
+    "title": "Streams",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "supervision",
+    "title": "Supervision",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "supplier",
+    "title": "Supplier",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "system-internals",
+    "title": "System internals",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "systemic-risk",
+    "title": "Systemic-Risk",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "tail-recursion",
+    "title": "Tail Recursion",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "tata",
+    "title": "Tata",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "teradata",
+    "title": "Teradata",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "testing",
+    "title": "Testing",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "tf-idf",
+    "title": "TF-IDF",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "tier-1",
+    "title": "Tier 1",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "tier-2",
+    "title": "Tier 2",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "train-test",
+    "title": "Train-test",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "train-test-split",
+    "title": "Train\\_test\\_split",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "trees",
+    "title": "Trees",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "type-safety",
+    "title": "Type safety",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "type-systems",
+    "title": "Type Systems",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "valuation",
+    "title": "Valuation",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "wacc",
+    "title": "WACC",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "windowing",
+    "title": "Windowing",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "workflow-management",
+    "title": "Workflow Management",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "write-ahead-log",
+    "title": "Write-Ahead Log",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "yarn",
+    "title": "YARN",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "zero-copy",
+    "title": "Zero Copy",
+    "aliases": [],
+    "urls": []
+  },
+  {
+    "id": "zookeeper",
+    "title": "Zookeeper",
+    "aliases": [],
+    "urls": []
+  }
+]

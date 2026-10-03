@@ -1,0 +1,5 @@
+{% assign item = include.post %}{% assign discovery = site.data.discovery[item.url] %}{% assign topic = site.data.topics | where: 'id', discovery.topic | first %}
+<article class="writing-row">
+  <div class="row-date"><time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%d %b %Y' }}</time>{% if topic %}<a href="{{ '/topics/' | relative_url }}#{{ topic.id }}">{{ topic.title }}</a>{% endif %}</div>
+  <div><h3><a href="{{ item.url | relative_url }}">{{ item.title | markdownify | strip_html }}</a></h3>{% if include.excerpt %}<p>{{ item.excerpt | markdownify | strip_html | truncatewords: 35 }}</p>{% endif %}</div>
+</article>

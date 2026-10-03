@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% assign discovery = site.data.discovery[page.url] %}{% assign topic = site.data.topics | where: 'id', discovery.topic | first %}{% assign series = site.data.series | where: 'id', discovery.series | first %}
+<main id="main" class="reading-shell">
+  <article class="reading-article h-entry" itemscope itemtype="https://schema.org/BlogPosting"{% if page.id %} data-pagefind-body{% endif %}>
+    <header class="article-header">
+      <p class="eyebrow" data-pagefind-ignore>{% if topic %}<a href="{{ '/topics/' | relative_url }}#{{ topic.id }}" data-pagefind-filter="Topic">{{ topic.title }}</a>{% else %}Life, learnings & realities{% endif %}</p>
+      <h1 id="page-title" class="p-name" itemprop="headline" data-pagefind-meta="title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+      {% if page.date %}<div class="article-dates" data-pagefind-ignore><span>Published <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}" data-pagefind-meta="date[datetime]">{{ page.date | date: '%d %B %Y' }}</time></span>{% if page.last_modified_at %}<span>Updated <time itemprop="dateModified" datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: '%d %B %Y' }}</time></span>{% endif %}<span>{{ page.content | number_of_words | divided_by: site.words_per_minute | at_least: 1 }} min read</span></div>{% endif %}
+      <div class="article-author" data-pagefind-ignore><img src="{{ site.author.avatar | relative_url }}" alt="" width="40" height="40"><span>By <a href="{{ '/aboutme/' | relative_url }}" rel="author">Ganesh Raman</a><small>Engineering, product and the questions in between.</small></span></div>
+      {% if series %}<p class="series-context" data-pagefind-ignore><a href="{{ '/series/' | relative_url }}#{{ series.id }}">{{ series.title }}</a> · {{ discovery.position }} of {{ series.urls.size }}</p>{% endif %}
+    </header>
+    {% if page.toc %}<details class="reading-toc" data-pagefind-ignore><summary>On this page</summary><nav aria-label="Table of contents">{% include toc.html html=content sanitize=true h_min=2 h_max=3 skip_no_ids=true %}</nav></details>{% endif %}
+    <section class="page__content e-content" itemprop="articleBody">{{ content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' }}</section>
+    <footer class="article-end" data-pagefind-ignore>
+      {% include page__taxonomy.html %}
+      {% if series %}{% assign next_index = discovery.position %}{% assign next_url = series.urls[next_index] %}{% assign next_article = site.posts | where: 'url', next_url | first %}
+        <nav class="series-next" aria-label="Series navigation"><p class="eyebrow" data-pagefind-ignore>{{ series.title }}</p>{% if next_article %}<span>Next in this series</span><h2><a href="{{ next_article.url | relative_url }}">{{ next_article.title }}</a></h2>{% else %}<p>You’ve reached the end of this reading path.</p>{% endif %}<a href="{{ '/series/' | relative_url }}#{{ series.id }}">See the complete series →</a></nav>
+      {% endif %}
+      {% if page.id %}<nav class="chronological-nav" aria-label="Chronological post navigation">{% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><small>Earlier in the archive</small>{{ page.previous.title }}</a>{% endif %}{% if page.next %}<a href="{{ page.next.url | relative_url }}"><small>Later in the archive</small>{{ page.next.title }}</a>{% endif %}</nav>{% endif %}
+    </footer>
+    {% if page.comments and jekyll.environment == 'production' %}<section class="article-comments" data-pagefind-ignore aria-labelledby="comments-title"><h2 id="comments-title">Comments</h2>{% include giscus.html %}<noscript><p><a href="https://github.com/ganesh47/ganesh47.github.io/discussions">Read or join the discussion on GitHub</a>.</p></noscript></section>{% endif %}
+  </article>
+</main>

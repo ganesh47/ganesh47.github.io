@@ -1,0 +1,65 @@
+[
+  {
+    "id": "dcf",
+    "title": "Discounted Cash Flows",
+    "description": "From discounting and capital allocation to lender valuation and liquidity risk.",
+    "urls": [
+      "/blog/discounted-cash-flows-the-math-part-1/",
+      "/blog/discounted-cash-flows-india-lending-and-growth-part-2/",
+      "/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/",
+      "/blog/bank-nbfc-valuation-pbv-excess-returns/",
+      "/blog/nbfc-liquidity-risk-ilfs-indusind/"
+    ]
+  },
+  {
+    "id": "industrial-ai",
+    "title": "AI, Software and Industrial Intelligence",
+    "description": "Capital, software economics, quality and the infrastructure behind industrial AI.",
+    "urls": [
+      "/blog/ai-bubble-or-platform-shift-capital-costs-and-commoditized-software/",
+      "/blog/quality-capture-the-new-moat-as-software-commoditizes/",
+      "/blog/infrastructure-inequality-power-silicon-and-capital/",
+      "/blog/future-of-asset-intelligence-and-industrial-ai/"
+    ]
+  },
+  {
+    "id": "corporate-graph",
+    "title": "India’s Corporate Graph",
+    "description": "A reading path through board interlocks, financial context and the Tata structure.",
+    "urls": [
+      "/blog/connected-machine-board-interlocks-india-corporate/",
+      "/blog/follow-the-money-lending-networks-india/",
+      "/blog/bombay-house-tata-board-graph/"
+    ]
+  },
+  {
+    "id": "s3",
+    "title": "Amazon S3: Storage to Platform",
+    "description": "The evolution of S3, its business model and the supporting references.",
+    "urls": [
+      "/blog/Amazon-S3-From-Simple-Storage-to-Platform-Monetization-Engine_2006-2025-Part-1/",
+      "/blog/Amazon-S3-From-Simple-Storage-to-Platform-Monetization-Engine_2006-2025-Part-2/",
+      "/blog/Amazon-S3-From-Simple-Storage-to-Platform-Monetization-Engine_2006-2025-Part-3/",
+      "/blog/Amazon-S3-From-Simple-Storage-to-Platform-Monetization-Engine_2006-2025-Sources/"
+    ]
+  },
+  {
+    "id": "automotive-oem",
+    "title": "Automotive OEM Restructuring",
+    "description": "Software, data monetization and innovation across automotive manufacturers.",
+    "urls": [
+      "/blog/Automotive-OEM-Restructuring-for-Data-Monetization-and-Innovation-Part-1/",
+      "/blog/Automotive-OEM-Restructuring-for-Data-Monetization-and-Innovation-Part-2/",
+      "/blog/Automotive-OEM-Restructuring-for-Data-Monetization-and-Innovation-Part-3/"
+    ]
+  },
+  {
+    "id": "automotive-2025",
+    "title": "Automotive Industry in Mid-2025",
+    "description": "A two-part view of volumes, costs and macroeconomic conditions.",
+    "urls": [
+      "/blog/Global-Automotive-Industry-Sentiments-Mid-2025-Part-1-Rebounding-Volumes/",
+      "/blog/Global-Automotive-Industry-Sentiments-Mid-2025-Part-2-Costs-&-Macros/"
+    ]
+  }
+]

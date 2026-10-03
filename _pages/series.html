@@ -1,0 +1,8 @@
+---
+layout: archive
+title: Series
+description: Ordered reading paths for ideas that need more than one article.
+permalink: /series/
+---
+<ul class="topic-index">{% for series in site.data.series %}<li><a href="#{{ series.id }}">{{ series.title }}</a></li>{% endfor %}</ul>
+{% for series in site.data.series %}<section id="{{ series.id }}" class="topic-section"><h2>{{ series.title }}</h2><p>{{ series.description }}</p><ol class="series-list">{% for url in series.urls %}{% assign post = site.posts | where: 'url', url | first %}<li><a href="{{ post.url | relative_url }}">{{ post.title | markdownify | strip_html }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time></li>{% endfor %}</ol><a class="back-to-top" href="#page-title">Back to series ↑</a></section>{% endfor %}
