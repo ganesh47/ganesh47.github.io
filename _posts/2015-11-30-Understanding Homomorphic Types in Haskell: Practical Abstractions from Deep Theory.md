@@ -1,6 +1,7 @@
 ---
 title: "Understanding Homomorphic Types in Haskell: Practical Abstractions from Deep Theory"
 date: 2015-11-30T09:00:00-04:00
+last_modified_at: 2026-10-02
 categories:
   - blog
 author: Ganesh Raman
@@ -12,6 +13,9 @@ tags:
   - Algebraic Structures
   - Real-World Abstractions
 ---
+
+*Revised 2 October 2026: Removed the truncated closing suggestion and supplied a modest conclusion consistent with the existing discussion. Original publication date retained.*
+
 
 In the world of Haskell — and functional programming more broadly — you’ll often hear terms like *functor*, *monoid*, and *homomorphism*.
 
@@ -156,4 +160,6 @@ This leads to the classic [monoid-based parallel word count](https://blog.jle.im
 ## If You’re Curious…
 
 - Explore how `foldMap` uses monoids to build homomorphic folds
-- Try implementing a homomorphic serializer for you
+- Test a candidate fold against the identity and composition laws, including empty inputs and boundaries between chunks.
+
+Structure-preserving composition is valuable because it makes the combine step explicit. Check the algebraic law for the actual representation before treating a computation as safely parallelizable.

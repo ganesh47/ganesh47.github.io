@@ -1,6 +1,7 @@
 ---
 title: "AI Bubble or Platform Shift? Capital, Costs, and Commoditized Software"
 date: 2026-01-19 09:00:00
+last_modified_at: 2026-10-02
 categories: [blog]
 author: Ganesh Raman
 tags: [AI, Markets, Strategy, Software, Productivity, Commoditization]
@@ -10,6 +11,9 @@ classes: wide
 excerpt: "A clear-eyed look at why this AI cycle feels bubbly, why it is still anchored in real economics, and why software creation is being commoditized faster than most teams are ready for."
 permalink: /blog/ai-bubble-or-platform-shift-capital-costs-and-commoditized-software/
 ---
+
+*Revised 2 October 2026: Added revision dating. The company-results discussion includes releases after the original 19 January publication, including Alphabet’s 4 February 2026 release; read it as this dated revision, not evidence available on the original publication day. Original publication date retained.*
+
 
 Series: AI Bubble, Software Commoditization, and Industrial AI
 
@@ -79,7 +83,7 @@ A cleaner comparison is: dot-com had stronger valuation euphoria with weaker pro
 
 The strongest way to test whether this is only narrative heat is to look at 2025 operating numbers from the largest AI-linked platforms and ask a simple question: are they still mostly story, or are they converting AI demand into measurable business performance while taking on heavier infrastructure load?
 
-Alphabet's 2025 results are a good anchor. The company reported full-year revenue of $402.8 billion, up 15 percent year over year, with Q4 revenue at $113.8 billion and Google Cloud up 48 percent to $17.7 billion in the quarter ([Alphabet Q4/FY2025 release PDF](https://s206.q4cdn.com/479360582/files/doc_news/2026/Feb/04/attachments/2025q4-alphabet-earnings-release.pdf)). It also signaled expected 2026 capex in a $175 billion to $185 billion range, which is a reminder that AI growth at this scale now runs through capital intensity, not just software efficiency ([Alphabet Q4/FY2025 release PDF](https://s206.q4cdn.com/479360582/files/doc_news/2026/Feb/04/attachments/2025q4-alphabet-earnings-release.pdf)).
+Alphabet's 2025 results, released on **4 February 2026**, are a good anchor for this revised article. The company reported full-year revenue of $402.8 billion, up 15 percent year over year, with Q4 revenue at $113.8 billion and Google Cloud up 48 percent to $17.7 billion in the quarter ([Alphabet Q4/FY2025 release PDF](https://s206.q4cdn.com/479360582/files/doc_news/2026/Feb/04/attachments/2025q4-alphabet-earnings-release.pdf)). It also signaled expected 2026 capex in a $175 billion to $185 billion range, which is a reminder that AI growth at this scale now runs through capital intensity, not just software efficiency ([Alphabet Q4/FY2025 release PDF](https://s206.q4cdn.com/479360582/files/doc_news/2026/Feb/04/attachments/2025q4-alphabet-earnings-release.pdf)).
 
 Microsoft tells a similar two-sided story. In fiscal 2025, Microsoft reported $281.7 billion in revenue, up 15 percent, with operating income up 17 percent to $128.5 billion, and Azure surpassing $75 billion in annual revenue for the first time, up 34 percent ([Microsoft 2025 Annual Report](https://www.microsoft.com/investor/reports/ar25/)). Then, in the quarter ended December 31, 2025 (FY26 Q2), Microsoft reported revenue of $81.3 billion, up 17 percent, with Azure and other cloud services up 39 percent and Microsoft Cloud revenue at $51.5 billion ([Microsoft FY26 Q2 release](https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q2/press-release-webcast)). The message is not subtle: demand is broad, but the margin structure is increasingly tied to infrastructure deployment and utilization quality.
 

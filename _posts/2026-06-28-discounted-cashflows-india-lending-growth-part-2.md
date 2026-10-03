@@ -1,29 +1,33 @@
 ---
 title: "Discounted Cash Flows in Action: Lending, Growth, and Capital Allocation in India"
 date: 2026-06-28 00:00:00
+last_modified_at: 2026-10-02
 categories: [blog]
 author: Ganesh Raman
 tags: [Finance, Banking, NBFC, Lending, DCF, Capital Allocation, India]
 toc: true
 author_profile: true
 classes: wide
-excerpt: "How DCF mathematics powers every home loan EMI, drives Bajaj Finance's 10.1% NIM, governs HDFC Bank's spread management, and frames the NSE IPO valuation — a practitioner's guide to DCF in Indian lending and capital allocation."
+excerpt: "How discounting connects home-loan EMIs, lender funding, retained capital and growth decisions, with explicit illustrative assumptions rather than unsourced issuer price targets."
 permalink: /blog/discounted-cash-flows-india-lending-and-growth-part-2/
 ---
 
+*Revised 2 October 2026: Corrected EMI arithmetic and issuer-versus-scenario labels, aligned P/B examples with Part 4, and removed the unlinked NSE target. Funding, NIM and capital-retention assumptions are now explicit. Original publication date retained.*
+
+
 Series: Discounted Cash Flows: The Complete Indian Guide
 
-Series map: [Part 1](/blog/discounted-cash-flows-the-math-part-1/) \| [Part 2](/blog/discounted-cash-flows-india-lending-and-growth-part-2/) \| [Part 3](/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/)
+Series map: [Part 1](/blog/discounted-cash-flows-the-math-part-1/) \| [Part 2](/blog/discounted-cash-flows-india-lending-and-growth-part-2/) \| [Part 3](/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/) \| [Part 4](/blog/bank-nbfc-valuation-pbv-excess-returns/) \| [Liquidity risk](/blog/nbfc-liquidity-risk-ilfs-indusind/)
 
-Part 2 of 3. Previous: [Discounted Cash Flows: The Math Behind Every Indian Valuation](/blog/discounted-cash-flows-the-math-part-1/) | Next: [The Two-Number Truth: Operating Ratio, Credit Cost, and DCF](/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/)
+Part 2 of the series. Previous: [Discounted Cash Flows: The Math Behind Every Indian Valuation](/blog/discounted-cash-flows-the-math-part-1/) | Next: [The Two-Number Truth: Operating Ratio, Credit Cost, and DCF](/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/)
 
 ## Summary
 
-Part 1 of this series built the DCF toolkit from scratch: the formula, WACC inputs anchored to a 6.84% G-Sec yield and Damodaran's 7.08% equity risk premium for India, and a worked Reliance Industries valuation exercise. This post applies the same framework to where most Indians actually encounter finance: borrowing money, lending it out, and deciding where to deploy capital for growth. The thread connects your ₹50 lakh home loan to Bajaj Finance's 10.1% NIM, to HDFC Bank's spread economics, to the analyst DCF valuation of the NSE's ₹30,000 crore IPO. The mathematics is the same throughout — only the context changes.
+Part 1 built the DCF toolkit using explicit assumptions and a fictional company. This post applies it to borrowing, lending and capital allocation. The thread connects a ₹50 lakh home loan to lender funding and retained capital. Issuer financial observations, hypothetical inputs and market-price opinions need separate labels; the mathematics cannot make them interchangeable.
 
 ## Every EMI Is a DCF
 
-When SBI lends you ₹50 lakh for a home at 7.5% per annum for 20 years, it is solving a present value equation. The monthly EMI is the fixed cash flow that, when discounted at the loan rate, equals exactly the principal disbursed. This is not coincidence — the EMI formula and the present value of an annuity formula are the same equation rearranged.
+For an illustrative ₹50 lakh fixed-rate home loan at 7.5% per annum for 20 years, it is solving a present value equation. The monthly EMI is the fixed cash flow that, when discounted at the loan rate, equals exactly the principal disbursed. This is not coincidence — the EMI formula and the present value of an annuity formula are the same equation rearranged.
 
 The EMI formula:
 
@@ -36,27 +40,26 @@ Where:
 - **r** = monthly interest rate = 7.5% / 12 = 0.625% = 0.00625
 - **n** = number of months = 20 × 12 = 240
 
-Computing (1.00625)²⁴⁰ ≈ 4.46. The monthly payment works out to:
+Computing (1.00625)^240 gives approximately 4.460817. Using unrounded inputs:
 
 ```
-EMI = 50,00,000 × 0.00625 × 4.46 / (4.46 − 1)
-    = 50,00,000 × 0.02788 / 3.46
-    = ₹40,280 per month
+EMI = 50,00,000 × 0.00625 / (1 − 1.00625^(−240))
+    = ₹40,279.66 per month ≈ ₹40,280
 ```
 
-Over 240 months, total outflow = ₹40,280 × 240 = **₹96.67 lakh** on a ₹50 lakh loan. The ₹46.67 lakh difference is the cost of time.
+Total outflow is about **₹96.67 lakh**, of which **₹46.67 lakh** is interest. Fees, insurance, changing floating rates and prepayments are excluded.
 
-The verification is the DCF insight: the present value of ₹40,280 received every month for 240 months, discounted at 7.5%/12 (0.625%) per month, equals exactly ₹50,00,000. From the bank's perspective, each monthly payment is a future cash inflow discounted back to today at the loan rate. The bank disbursed ₹50 lakh today and is receiving back a stream of smaller payments whose present value equals that disbursement. That is DCF, applied 240 times.
+The present value of the unrounded payment stream, discounted at 0.625% per month, equals ₹50,00,000. Displaying the EMI rounded to a rupee introduces a small rounding difference; it should not be called an exact identity for that rounded amount.
 
 How much does the interest rate matter at this scale?
 
 | Rate (p.a.) | Monthly EMI | Total Payout | Total Interest |
 |-------------|-------------|--------------|----------------|
-| 7.25% (best CIBIL tier) | ₹39,316 | ₹94.36 lakh | ₹44.36 lakh |
-| 7.50% (standard)        | ₹40,280 | ₹96.67 lakh | ₹46.67 lakh |
-| 8.40% (higher LTV tier) | ₹43,075 | ₹1,03.38 lakh | ₹53.38 lakh |
+| 7.25% (illustrative) | ₹39,519 | ₹94.85 lakh | ₹44.85 lakh |
+| 7.50% (illustrative)        | ₹40,280 | ₹96.67 lakh | ₹46.67 lakh |
+| 8.40% (illustrative) | ₹43,075 | ₹1,03.38 lakh | ₹53.38 lakh |
 
-The 115bps spread between the best and worst rate tier costs the borrower ₹3,759 more each month — ₹9 lakh more over the loan life. This is precisely what credit scoring is worth to you as a borrower. And it is why Indian banks invest in credit underwriting: the price they can charge scales directly with the risk they perceive, and every basis point of spread is a permanent feature of a loan that may run for 20 years.
+The 115-basis-point difference between these assumed fixed rates costs about **₹3,556 more each month**, or **₹8.54 lakh** over 240 months. The table is not a current bank rate card or an estimate of the causal value of a CIBIL score. For a floating-rate loan, future resets change both payment and total-interest outcomes.
 
 ## How Indian Banks Price Loans
 
@@ -68,54 +71,28 @@ Since October 2019, the RBI has required that all new floating-rate retail loans
 Lending Rate = External Benchmark + Credit Risk Spread + Operating Cost Spread
 ```
 
-In practice, with the repo rate currently at 5.25% (June 2026):
-- **SBI home loan:** repo (5.25%) + ~200bps spread = **7.25%** for the best-rated borrowers (CIBIL 800+, low LTV)
-- **HDFC Bank home loan:** repo + ~275–300bps = ~8.00–8.25%
-- **Higher-risk borrowers** at the same banks: another 50–100bps on top
+For a simple repricing illustration, assume a policy benchmark of 5.25% and a 2.00% spread: the quoted lending rate would be 7.25%. Neither input is asserted as a current SBI rate. Contractual reset dates, borrower risk and product terms must come from the loan agreement and a dated rate card.
 
-The bank's economic engine is the **Net Interest Margin (NIM)** — the difference between what it earns on loans and what it pays to fund them.
+Net interest income is interest income minus interest expense. **NIM is NII divided by the issuer's specified average earning-asset or total-asset denominator**. It is not generally yield on advances minus funding cost, because the asset and liability bases differ; NIM×loan book is not generally NII.
 
-**HDFC Bank Q4 FY25 (from the April 2025 earnings presentation):**
-- Yield on advances: ~**8.4%** (what the bank earns across its entire loan book)
-- Cost of funds: ~**4.9%** (blended cost of deposits, borrowings, and equity)
-- Net Interest Margin: ~**3.46%** (the spread)
-- NIM × Loan Book size = Net Interest Income = the primary P&L line
-
-When the RBI cut the repo rate by 125bps over 2025–2026, banks' loan yields repriced downward faster than their deposit costs could fall (deposits are typically fixed for 1–3 years, while floating rate loans reset within 3 months). This NIM compression — a perfectly predictable DCF consequence of the external benchmark mandate — is a recurring feature of rate-cutting cycles in Indian banking.
+Rate cuts can lower floating-loan yields before term deposits reprice. This is a plausible mechanism, but the amount and timing depend on the actual asset/liability profile. An analyst should model those cash flows rather than compensate mechanically with a higher terminal growth rate.
 
 The external benchmark rule is good for borrowers (rate cuts pass through immediately) and creates short-term pain for banks' income statements. For a DCF analyst modelling HDFC Bank, a rate cut cycle means lower near-term FCF from the loan book, requiring either a lower discount rate (consistent with lower risk in the economy) or a higher terminal growth assumption to maintain valuation.
 
-## The NBFC Model: Bajaj Finance and the Art of Spread Management
+## The NBFC Model: Funding and Spread Management
 
-If HDFC Bank's NIM is 3.46%, why does Bajaj Finance report a NIM of **10.1%** (FY25)?
+A bank with a CASA franchise and a consumer-finance NBFC have different funding and operating structures. An NBFC without current or savings accounts may still use **fixed deposits**, bank borrowing, debentures, commercial paper and other funding; “no CASA” does not mean “entirely funded by CP and NCDs.” Use the issuer's dated funding table before assigning percentages.
 
-The answer lies in who they lend to, on what collateral, and at what tenure — and ultimately, in the fundamental cost structure of an NBFC versus a bank.
+For a fictional loan, borrowing at 8% and lending at 18% gives a **10-percentage-point contractual spread**. It does not establish an issuer's NIM or imply 10% of its total assets is profit. Different balances, idle cash, fees, collection costs, provisions and tax must be reconciled.
 
-**Bajaj Finance FY25 key numbers (Annual Report and Q4 FY25 investor presentation):**
-- Assets Under Management (AUM): **₹4,16,661 crore** (March 2025; +26% YoY)
-- Cost of Funds: **7.99%** (Q4 FY25; management guided 7.75–7.85% by FY26 end)
-- Implied yield on assets: **~18.1%** (NIM 10.1% + COF 7.99%)
-- Net Interest Income growth: +23.8% YoY
-- Return on Assets: 4.6%; Return on Equity: ~22%
-- Borrowing mix: Banks 41%, Money Market instruments (NCDs, CPs) 49%, NHB 10%
+| Question | What to source |
+|---|---|
+| Funding cost | Average liabilities, funding mix, interest expense and period |
+| Lending yield | Average advances or earning assets and interest income |
+| Credit risk | Provisions, write-offs, recoveries and denominator |
+| Equity return | Net income and consistently averaged equity |
 
-Bajaj Finance borrows at ~8% and lends at ~18%. The 10 percentage point spread is what makes it one of the most profitable consumer lenders in the world by return-on-equity standards. Why does this spread exist and why hasn't competition eliminated it?
-
-| Dimension | HDFC Bank | Bajaj Finance |
-|-----------|-----------|---------------|
-| Primary lending products | Home loans, corporate loans | Consumer durables, personal loans, SME |
-| Collateral | Mostly secured (property) | Largely unsecured (consumer) |
-| Average loan tenure | 10–20 years | 6–24 months |
-| Typical borrower | Salaried prime, HNI | Aspiring middle class, MSMEs |
-| Cost of funds | ~4.9% (benefits from CASA) | ~7.99% (no CASA franchise) |
-| Yield on assets | ~8.4% | ~18.1% |
-| NIM | ~3.46% | ~10.1% |
-
-The structural asymmetry is the **CASA franchise**. HDFC Bank holds vast quantities of current and savings account deposits that pay depositors 0–3.5% per annum — well below market rates — because customers value the transactional convenience. This cheap funding significantly lowers HDFC Bank's blended cost of funds to ~4.9%, enabling it to lend home loans at 8.25% and still earn a healthy spread.
-
-Bajaj Finance has no CASA. It cannot accept savings deposits. It funds itself entirely in the wholesale market — by issuing Non-Convertible Debentures (NCDs) and Commercial Paper (CPs) — at market rates of ~8%. To make the economics work, it lends at ~18% to borrowers that banks will not (or cannot) serve at low rates: two-wheeler buyers, consumer appliance purchasers on EMI, small business owners without formal income documentation. The higher rate compensates for higher credit risk, shorter tenor (which concentrates risk differently from long-term mortgages), and the absence of a cheap funding base.
-
-**DCF intuition for the loan book:** Bajaj Finance's book value (equity on the balance sheet) is not its market value. The market's equity valuation is the present value of all future distributable cash flows — interest income minus credit losses minus operating costs minus the cost of capital needed to sustain AUM growth. The "DCF of the loan book" is the spread (NIM − credit losses − operating costs ≈ ROA 4.6%) compounded on a growing AUM base, discounted at the cost of equity (~14.5%). This is what drives the P/B premium.
+The cash available to shareholders is earnings after interest, operating costs, credit losses and tax, less the equity needed for growth. Subtract capital retention; do not subtract the cost of equity as a cash expense and then discount the same cash flow at Ke again.
 
 ## Valuing a Lending Business: The Equity DCF Approach
 
@@ -145,27 +122,28 @@ Where ROE is return on equity, COE is cost of equity, and g is the sustainable g
 
 **If ROE < COE:** P/B < 1. The business destroys value — rational sellers trade the equity at a discount to book.
 
-**HDFC Bank (illustrative):**
-- ROE: ~16–17% (FY25)
-- COE: ~13–14% (lower beta reflecting systemically important status and strong deposit franchise)
-- Sustainable growth (g): ~12–13% (driven by retained earnings × ROE)
-- Justified P/B ≈ (16.5% − 12.5%) / (13.5% − 12.5%) = 4.0% / 1.0% = **~4x**
-- Actual market P/B: ~2.8–3.2x
+**HDFC-named scenario, aligned with Part 4:**
+- Assumed forward RoE: **14.4%**, not a verified FY25 observation
+- Assumed Ke: **13.0%**
+- Perpetual g: **9.0%**
+- P/B=(14.4−9)/(13−9)=**1.350×**
 
-The gap between the formula's 4x and the market's ~3x reflects the market pricing in either NIM pressure from rate cuts reducing near-term ROE, or a higher COE for HDFC Bank post the HDFC-HDFC Bank merger integration risk. This is the kind of insight a P/B DCF yields.
+The original series mixed normalized, historical and differently defined issuer returns. These fixed assumptions now match [Part 4](/blog/bank-nbfc-valuation-pbv-excess-returns/). A comparison price/B of 2.85× disagrees with the model; it does not uniquely identify NIM pressure, merger risk or a lower cost of equity.
 
-**Bajaj Finance (illustrative):**
-- ROE: ~21–23% (FY25)
-- COE: ~14.5% (higher beta; NBFC with concentrated consumer/SME risk)
-- Sustainable growth (g): ~17–20% (high retention ratio × high ROE)
+**Bajaj-named scenario, aligned with Part 4:**
+- Assumed forward RoE: **19.1%**, not a verified FY25 observation
+- Stable Ke=6.70%+0.95×7.00%=**13.35%**
+- Stable g=**10.0%**
+- P/B=(19.1−10)/(13.35−10)=**2.716×**
 
-Here the formula creates a problem: when g approaches or exceeds COE (both are near 14–17%), the denominator (COE − g) approaches zero or goes negative, producing a result that is mathematically undefined or negative. This is not an error in the formula — it is the formula correctly signaling that the standard perpetuity assumption has broken down. A business growing faster than its cost of equity in perpetuity would have infinite value, which is clearly not real.
+A separate high-growth stage might assume book growth of 17% for a finite period. That can exceed Ke temporarily, but it cannot be put into the perpetual denominator. Growth also consumes retained equity; a growth rate above RoE would require external capital or another explicitly modeled adjustment.
 
-For high-growth NBFCs like Bajaj Finance, analysts use a **two-stage equity DCF**:
-1. **Stage 1 (5–7 years):** Explicit model of FCFEs at current high-growth trajectory
-2. **Stage 2 (terminal):** Gordon Growth at a sustainable rate (say 8–10%), where growth has converged to a level below COE
+For a multistage equity DCF:
+1. Forecast annual net income, equity retention, payouts and any issuance over the explicit period.
+2. Move to a stable terminal regime with Ke>g and a coherent payout/return assumption.
+3. Discount both payouts and terminal equity value to today. Do not add a stable P/B to today's book without discounting the transition.
 
-The resulting equity value divided by current book value gives the justified P/B. Bajaj Finance's market P/B of ~6–7x reflects the market's belief that the company will sustain ROE well above COE for a decade or more before normalising — a powerful compounding thesis, but one that requires the company to keep executing at its current extraordinary pace.
+The price cannot tell us one unique growth duration. Several return, growth and risk paths can produce the same present value.
 
 ## DCF for Growth Capital Allocation
 
@@ -179,13 +157,13 @@ DCF is not only for valuing companies. It is the primary tool for deciding where
 NPV = Σ CFt/(1+r)^t − Initial Investment
 ```
 
-Accept if NPV > 0; reject if NPV < 0. Among competing projects, choose the highest NPV. **This rule is always correct.**
+Accept if NPV > 0; reject if NPV < 0. For comparable mutually exclusive projects with consistent risk, horizon and no binding capital constraint, choose the higher NPV. Capital rationing, timing and strategic dependencies require a fuller decision model.
 
 **Internal Rate of Return (IRR)** = the discount rate at which NPV = 0 — the implied return from the project.
 
 Accept if IRR > WACC; reject if IRR < WACC. This rule works in most cases but fails in important ones:
 
-- **Scale problem:** a ₹100 crore project returning ₹110 crore (10% IRR) and a ₹1 crore project returning ₹1.25 crore (25% IRR) — IRR prefers the small project; NPV correctly identifies the large one as worth more in absolute terms
+- **Scale problem:** with both returns arriving after one year and a common 8% discount rate, ₹100 crore returning ₹110 crore has NPV **₹1.852 crore**; ₹1 crore returning ₹1.25 crore has NPV **₹0.157 crore**. The smaller project has higher IRR but creates less absolute value under these assumptions.
 - **Multiple sign changes:** projects with negative cash flows mid-life (a mine that needs environmental remediation at year 15) can produce multiple mathematically valid IRRs, making the number meaningless
 - **Non-comparable durations:** a 3-year project with 18% IRR vs a 10-year project with 15% IRR — IRR favours the shorter one, but NPV might correctly favour the longer compounding
 
@@ -200,11 +178,11 @@ For a utility-scale renewable energy project in India, the DCF logic has distinc
 - **Long asset life:** 25+ years (solar panels, wind turbines)
 - **Contracted revenue:** Power Purchase Agreements (PPAs) with state utilities fix the tariff for 25 years, substantially reducing revenue uncertainty
 - **Lower discount rate:** ~11–12% WACC for well-structured renewable projects (predictable cash flows + government-backed offtakers + asset-backed debt = lower risk)
-- **Project IRR:** typically 10–13% for competitive bids — just above WACC, which is why projects are NPV-positive but not dramatically so
+- **Project IRR:** a scenario range of 10–13% crosses an assumed 11% WACC. For a conventional investment with one initial outflow, IRR above WACC implies positive NPV; equality implies zero NPV and a lower IRR implies negative NPV. This is not a verified issuer-wide project-return estimate.
 
 The terminal value in a renewable project DCF is modest compared to a growth business because the asset has a defined 25-year life; there is no perpetual growth assumption after that. Most of the value is in the explicit 25-year cash flow stream.
 
-For NREL's equity story, the DCF rationale is: deploy ₹4,000–6,000 crore per gigawatt into projects earning 11–13% IRR against a WACC of ~11%; positive NPV at scale becomes a large value creation machine as India expands renewable capacity toward its 500 GW by 2030 ambition.
+The capital-allocation question is whether each project generates cash flows worth more than its investment at the appropriate discount rate. A project at 11% IRR against an 11% WACC does not create positive NPV merely because it is large. The capacity-cost and return ranges above are teaching assumptions; an issuer valuation requires dated project disclosures and cash-flow forecasts.
 
 ### Jio: The Most Important Indian Capital Allocation Decision of the Last Decade
 
@@ -220,35 +198,15 @@ Three factors justified the commitment in DCF terms:
 
 By FY25, Jio's estimated revenue had crossed ₹1 lakh crore annually. The Reliance stock re-rating from ~₹400 (2016) to ~₹1,478 (2025) reflects this DCF playing out in reality. Capital allocation at scale, done with disciplined DCF thinking and scenario analysis, is how conglomerates create multi-decade value.
 
-## NSE IPO (2026): A Live DCF Exercise
+## An Exchange Valuation: Separate the Model From the Filing
 
-The National Stock Exchange filed a DRHP with SEBI in 2026 for an estimated ₹30,000 crore public issue. It is one of the most anticipated Indian equity offerings given NSE's near-monopoly on equity derivatives trading volumes and its structural position at the centre of India's capital markets.
+An exchange can be studied through transaction fees, recurring services, operating costs, reinvestment and regulatory scenarios. Network effects may strengthen its franchise, but competition and fee-rule changes still affect cash flows.
 
-Available analyst estimates based on DRHP financial disclosures illustrate a textbook DCF-plus-cross-check methodology:
+The original version quoted an NSE IPO size and analyst per-share targets without a linked filing or a reproducible forecast. Those figures are not used here as established facts. IPO status requires a dated issuer/exchange or regulatory disclosure; fair value requires the underlying model and share count.
 
-**Analyst base case parameters:**
-- Revenue CAGR assumption: ~18% over the explicit 10-year forecast period
-- Methodology: 10-year free cash flow projection + Gordon Growth terminal value
-- Base case DCF fair value: **₹1,908 per share**
-- Blended fair value (DCF + EV/Revenue cross-check): **₹1,715 per share**
-- Implied market capitalisation range: ₹4.2 lakh crore to ₹6.25 lakh crore depending on scenario
+For an illustrative mature exchange with year-10 FCFF of ₹100 crore, WACC=12% and terminal g=4%, year-10 terminal enterprise value is ₹1,300 crore. Its present value is **₹418.57 crore**, before adding explicit-period cash flows and reconciling net debt or other claims. This is a calculation on assumed inputs, not an NSE valuation.
 
-**Why the DCF cross-check with multiples matters:**
-
-At ₹1,715 (blended fair value), NSE trades at approximately 38–43x projected FY26 earnings. BSE, the listed peer, trades at 45–55x FY26 estimates. DCF and peer multiples pointing in the same direction adds confidence; a large divergence between them demands explanation. Here they are broadly consistent, giving the analyst — and potential investors — a basis for conviction.
-
-**Why NSE's DCF has higher credibility than most:**
-- Exchange businesses earn recurring revenue from transaction fees — effectively a toll on every equity, derivatives, and debt trade
-- Capital expenditure is modest relative to revenue (no physical inventory, no loan book to fund)
-- Network effects compound: the most liquid exchange attracts the most participants, which reinforces liquidity, which attracts more participants
-- This moat justifies a terminal growth rate above average India GDP for longer than most businesses — the analysts' 18% revenue CAGR assumption for the explicit period is aggressive but not implausible given NSE's market position
-
-**The risks that make the sensitivity table non-trivial:**
-- SEBI has historically changed exchange fee structures; any regulatory intervention reprices all future cash flows
-- Post-2023 SEBI curbs on index options reduced some speculative volume; further regulatory tightening is a tail risk
-- BSE has been gaining derivatives market share; structural competitive erosion is possible
-
-At any IPO price above ₹1,715, the investor is implicitly underwriting a more optimistic terminal growth rate, a lower discount rate, or both. DCF does not prevent this — but it makes the underwriting explicit. The question to ask is not "is NSE a quality business?" (it obviously is) but "what growth rate and discount rate does this price imply, and do I believe those numbers?"
+Peer multiples can be a cross-check only when forecast periods, share counts and enterprise/equity claims match. A DCF and a multiple agreeing does not independently prove that their shared assumptions are correct.
 
 ## Why DCF Is a Management Superpower
 
@@ -283,7 +241,7 @@ The spread above cost of funds is the lender's compensation for three sources of
 - **Duration risk:** longer tenor = more uncertainty = wider spread required
 - **Liquidity risk:** less liquid loans (corporate project finance, SME lending) require extra return for the lender's inability to exit quickly
 
-When Bajaj Finance charges ~18% on an unsecured consumer loan while borrowing at ~8%, the 10% NIM covers approximately: credit losses of 2–3% (net NPA provisioning), operating costs of 3–4% (people, systems, branches), and residual return to equity of 3–4% (the ROA of 4.6%). Each of these is estimable and verifiable. The business model only works if all three buckets are managed tightly — which is why Bajaj Finance's underwriting sophistication and collections infrastructure are moat, not detail.
+In the fictional 18%-yield/8%-funding example, the 10-point spread must cover losses, operating costs and tax before it can support shareholder distributions. Convert all ratios to the same average-balance denominator. Underwriting and collections matter because the contractual yield is not the same as realized cash return.
 
 ### For Investors
 
@@ -295,21 +253,15 @@ This reverse-engineering of implied assumptions — sometimes called "implied gr
 
 ## Conclusion
 
-The mathematics threaded through this two-part series never changes. It is always the same calculation: future cash flows discounted at a rate that reflects risk and the opportunity cost of capital. It appears first as the ₹40,280 monthly EMI on your home loan. It reappears as the 10.1% NIM Bajaj Finance extracts from India's aspiring consumers by borrowing at 8% and lending at 18%. It surfaces in HDFC Bank's 3.46% net interest margin, the result of decades of CASA franchise building and careful rate-cycle navigation. It culminates in the ₹1,715–1,908 per-share valuation range that analysts assign to the NSE's pending ₹30,000 crore IPO.
+The mathematics stays the same: cash flows discounted consistently with the claim being valued. It appears in the ₹40,280 rounded monthly EMI, in a lender's spread and capital-retention decisions, and in a multistage valuation with an explicit stable end state. The useful discipline is to keep assumptions visible and source actual metrics separately.
 
 DCF does not tell you what will happen. It tells you what must be true for a price to be justified — and that is the more useful skill. India is entering a decade of large, complex capital market transactions: renewable energy platforms, financial services unicorns, infrastructure trusts, and technology IPOs at unprecedented scale. The operators, lenders, founders, and investors who understand the present value mathematics beneath these decisions will see what others miss — not because the numbers are secret, but because the framework forces the right questions to be asked at the right time.
 
 ---
 
 **Sources and references:**
-- India 10Y G-Sec yield: June 2026 market data
-- RBI repo rate: 5.25% (June 2026, following 125bps easing cycle from peak of 6.50%)
-- Damodaran India ERP: 7.08% total (January 2026 dataset, pages.stern.nyu.edu)
-- EY-NSE Cost of Capital Survey 2024, NSE Archives
-- RBSA Cost of Capital in India, 6th Edition (2023)
-- Bajaj Finance Q4 FY25 Investor Presentation and FY25 Annual Report
-- HDFC Bank Q4 FY25 Earnings Presentation (April 2025)
-- SEBI DRHPs: Swiggy (September 2024), NTPC Green Energy (September 2024), NSE (2026)
-- SBI home loan rates: BankBazaar, 2025-26
-- NSE IPO DCF analysis: analyst estimates based on DRHP disclosures, June 2026
-- Reliance Industries DCF model parameters: November 2025 analyst report
+- [RBI government-securities primer](https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711), §§23–24 and 29, for yield and holding-period distinctions used in Part 1.
+- [Damodaran, *Valuing Financial Service Firms*](https://pages.stern.nyu.edu/~adamodar/pdfiles/papers/finfirm09.pdf), equity cash-flow and excess-return sections.
+- [Part 4’s reproducible P/B scenarios](/blog/bank-nbfc-valuation-pbv-excess-returns/) for the common HDFC/Bajaj assumptions. They are pedagogical inputs, not sourced issuer FY25 metrics.
+
+The EMI, P/B and exchange examples were recalculated on 2 October 2026. Corporate-history illustrations elsewhere in the post are not current price targets; verify issuer filings before using their estimates for investment work.

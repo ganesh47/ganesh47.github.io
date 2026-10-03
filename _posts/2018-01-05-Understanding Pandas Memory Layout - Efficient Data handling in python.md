@@ -1,10 +1,14 @@
 ---
 title: "Understanding Pandas Memory Layout: Efficient Data Handling in Python"
 date: 2018-01-05
+last_modified_at: 2026-10-02
 categories: [blog]
 tags: [pandas, python, memory, performance, dataframe, series]
 author: Ganesh Raman
 ---
+
+*Revised 2 October 2026: Corrected per-column dtype inference and the manager display; removed unsupported benchmark timings and distinguished later APIs from the historical example. Original publication date retained.*
+
 
 When working with large datasets in Python, **memory efficiency** becomes critical. One of the reasons **Pandas** remains a powerhouse for data manipulation is its underlying **block-based memory layout** — a design that provides both speed and scalability.
 
@@ -12,9 +16,7 @@ When working with large datasets in Python, **memory efficiency** becomes critic
 
 Pandas internally uses a **BlockManager** to store `DataFrame` contents. It doesn't store each column independently — instead, **columns with the same dtype are grouped into contiguous NumPy arrays** called **Blocks**.
 
-This design choice is explained in [Wes McKinney’s deep-dive on Pandas internals](https://github.com/wesm/pandas2/blob/master/source/internal-architecture.rst#what-is-blockmanager-and-why-does-it-exist), where he describes `BlockManager` as the structure that enables:
-
-> "Efficient internal storage and computation by leveraging the fact that real-world data sets often contain many columns of the same dtype."
+This design choice is explained in [Wes McKinney’s deep-dive on Pandas internals](https://github.com/wesm/pandas2/blob/master/source/internal-architecture.rst#what-is-blockmanager-and-why-does-it-exist), which explains the motivation for grouping same-dtype columns in blocks. This post discusses the historical NumPy-backed implementation; private storage layouts and newer extension dtypes need version-specific treatment.
 
 For example:
 
@@ -25,13 +27,14 @@ df = pd.DataFrame({
     'id': [1, 2, 3],
     'score': [9.5, 8.7, 7.8],
     'name': ['Alice', 'Bob', 'Charlie']
-})
+}, columns=['id', 'score', 'name'])
 ```
 
-In this case:
+The example sets column order explicitly so the historical display does not depend on dictionary-order conventions. In this case:
 
-* `'id'` and `'score'` will be stored in one `float64` block (after type promotion)
-* `'name'` will be in a separate `object` block
+* `id` is inferred as `int64`, `score` as `float64`, and `name` as `object`.
+* These three dtypes occupy separate blocks in the consolidated NumPy-backed example; constructing a DataFrame from a dictionary does not promote every numeric column to a common dtype.
+* Explicitly casting `id` to `float64` would permit it to share a float block with `score`.
 
 ## Why does this matter?
 
@@ -39,13 +42,13 @@ This layout leads to **significant memory and performance optimizations**:
 
 ### ✅ Vectorization-friendly
 
-Since data of the same type is stored together, operations like `df.mean()` or `df + 2` can be **broadcasted efficiently at the NumPy level**, avoiding Python-level loops.
+Numeric-column operations can use NumPy vectorization. Select numeric columns explicitly: the mixed example contains strings, so an expression such as `df + 2` is not a valid operation across the whole frame.
 
 ### ✅ Lower memory fragmentation
 
 Grouping same-typed columns reduces memory overhead and allows **better use of CPU caches** during operations — leading to faster execution.
 
-### ✅ Efficient `.values` and `.to_numpy()`
+### ✅ Array conversion with `.values`
 
 When calling:
 
@@ -53,7 +56,7 @@ When calling:
 df.values
 ```
 
-Pandas can often **return a view** of the underlying NumPy array without copying, if the DataFrame is homogeneous. This can be thousands of times faster than copying heterogeneous data.
+Pandas can often **return a view** of the underlying NumPy array without copying, if the DataFrame is homogeneous. Whether conversion shares memory or copies depends on dtypes, consolidation and version; measure it rather than assuming a universal speedup. `.values` is the API used in this historical example. `.to_numpy()` was introduced later, in [Pandas 0.24](https://pandas.pydata.org/docs/whatsnew/v0.24.0.html), and is not presented as a 2018 API.
 
 ## Example: Performance Comparison
 
@@ -77,22 +80,15 @@ df_numeric.mean()
 print("Numeric-only mean time:", time.time() - start)
 
 start = time.time()
-df_mixed.mean()
+df_mixed.mean(numeric_only=True)
 print("Mixed-type mean time:", time.time() - start)
 ```
 
-**Expected Output (approx.):**
-
-```
-Numeric-only mean time: 0.005s
-Mixed-type mean time: 0.015s
-```
-
-This shows how having a clean, type-consistent DataFrame can yield noticeable performance benefits in numeric operations. The `BlockManager` ensures such homogeneous types are processed as a batch.
+The two operations now compute means over the same numeric columns. Their timings depend on the Pandas/NumPy versions, hardware, warm-up and allocation state. Run repeated measurements and inspect memory usage before drawing a performance conclusion; no fixed 3× speed difference follows from this example.
 
 ## Series vs DataFrame
 
-Even for a single `Series`, Pandas uses NumPy arrays underneath. That means:
+For an ordinary NumPy-backed `Series` in the version discussed here, values are held in an array. Object arrays hold references to Python objects; they do not make the objects themselves contiguous. That means:
 
 * Operations are vectorized
 * Memory layout is contiguous (unless dtype is `object`)
@@ -105,7 +101,7 @@ s.memory_usage(deep=True)
 
 ## How to inspect the internals?
 
-For learning or debugging, you can inspect the block layout:
+For learning or debugging in the historical Pandas 0.22-era API, you can inspect the block layout (private and version-specific):
 
 ```python
 df._data
@@ -117,14 +113,15 @@ You’ll see something like:
 BlockManager
 Items: Index(['id', 'score', 'name'], dtype='object')
 Axis 1: RangeIndex(start=0, stop=3, step=1)
-FloatBlock: slice(0, 2, 1), 2 x 3, dtype: float64
+IntBlock: slice(0, 1, 1), 1 x 3, dtype: int64
+FloatBlock: slice(1, 2, 1), 1 x 3, dtype: float64
 ObjectBlock: slice(2, 3, 1), 1 x 3, dtype: object
 ```
 
 This tells us:
 
-* Columns `id` and `score` are stored together in a single `FloatBlock`
-* `name` is in a separate `ObjectBlock`
+* `id`, `score` and `name` have separate dtype blocks in this input.
+* The manager display and block class names are private implementation details, not stable public API.
 
 ## Final Thoughts
 
@@ -137,3 +134,5 @@ If you're working with high-dimensional data or millions of rows, keep this in m
 ---
 
 *Published on Jan 5, 2018 — written by Ganesh Raman.*
+
+The [Pandas 0.22 constructor source and docstring](https://github.com/pandas-dev/pandas/blob/v0.22.0/pandas/core/frame.py#L222-L283) describes dtype inference. The input dtypes and three-block result were additionally reproduced with installed Pandas 2.3.3 during this revision; that does not establish byte-for-byte manager output or benchmark timings in 0.22.

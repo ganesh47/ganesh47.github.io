@@ -1,6 +1,7 @@
 ---
 title: "The Two-Number Truth: Operating Ratio, Credit Cost, and Why They Tell Opposite Sides of the Same DCF Story"
 date: 2026-07-05 00:00:00 UTC
+last_modified_at: 2026-10-02
 categories: [blog]
 author: Ganesh Raman
 tags: [Finance, Banking, DCF, Operating-Ratio, Credit-Cost, India, Investing]
@@ -15,13 +16,16 @@ header:
 permalink: /blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/
 ---
 
+*Revised 2 October 2026: Corrected net-income versus advance-growth arithmetic, fictional versus issuer RoE, denominator and accrual timing explanations, and the Alpha/Beta calculation. Added the Part 4 link and a primary SBI reference. Original publication date retained.*
+
+
 Series: Discounted Cash Flows: The Complete Indian Guide
 
-Series map: [Part 1](/blog/discounted-cash-flows-the-math-part-1/) \| [Part 2](/blog/discounted-cash-flows-india-lending-and-growth-part-2/) \| [Part 3](/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/) \| [Liquidity Risk](/blog/nbfc-liquidity-risk-ilfs-indusind/)
+Series map: [Part 1](/blog/discounted-cash-flows-the-math-part-1/) \| [Part 2](/blog/discounted-cash-flows-india-lending-and-growth-part-2/) \| [Part 3](/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization/) \| [Liquidity Risk](/blog/nbfc-liquidity-risk-ilfs-indusind/) \| [Part 4](/blog/bank-nbfc-valuation-pbv-excess-returns/) \| [Liquidity risk](/blog/nbfc-liquidity-risk-ilfs-indusind/)
 
-Part 3 of 3. Previous: [Discounted Cash Flows in Action: Lending, Growth, and Capital Allocation in India](/blog/discounted-cash-flows-india-lending-and-growth-part-2/)
+Part 3 of the series. Previous: [Discounted Cash Flows in Action: Lending, Growth, and Capital Allocation in India](/blog/discounted-cash-flows-india-lending-and-growth-part-2/)
 
-Extended reading: [When the Tap Runs Dry: NBFC Liquidity Risk and the IL&FS Collapse](/blog/nbfc-liquidity-risk-ilfs-indusind/)
+Extended reading: [Liquidity Risk](/blog/nbfc-liquidity-risk-ilfs-indusind/) · [Part 4: P/BV and Excess Returns](/blog/bank-nbfc-valuation-pbv-excess-returns/)
 
 ## Summary
 
@@ -29,21 +33,21 @@ Part 1 built the DCF toolkit from scratch. Part 2 applied it to Indian lending i
 
 ## The Machine That Leaks in Two Places
 
-Consider a sugarcane crusher. The Cost-to-Income Ratio (CIR) tells you how efficiently the machine runs — what fraction of every rupee of juice revenue goes to operating the press. A machine running at 40% CIR is efficient: 60 paise of every rupee of juice stays as profit before financing costs.
+Consider a sugarcane crusher. The Cost-to-Income Ratio (CIR) tells you how efficiently the machine runs — what fraction of every rupee of juice revenue goes to operating the press. A machine running at 40% CIR is efficient: 60 paise remains before provisions, tax and any costs outside the defined operating ratio. For a bank, funding interest is already netted into net interest income.
 
 But CIR says nothing about one crucial variable: what percentage of the sugarcane entering the machine is actually fresh? A machine running at 40% efficiency but fed 20% spoiled sugarcane will yield less juice than a 55%-efficient machine fed entirely fresh stock. The machine's efficiency metric told you nothing about the input quality.
 
-A lender's balance sheet works the same way. CIR measures how efficiently the machine runs. **Credit cost measures how much of the machine's output — interest income accrued — actually arrives as cash.** Ignore either number and you are reading half the story.
+A lender's balance sheet works the same way. CIR measures how efficiently the machine runs. **Credit cost measures recognized loss provisions relative to a specified loan or asset base. It is not itself a cash-collection ratio.** Ignore either number and you are reading half the story.
 
-**The complete picture of a bank's profitability requires exactly two numbers:**
+**CIR and credit cost are useful starting points; profitability also needs revenue, denominators and tax:**
 
-**RoA = NIM − Operating Cost Ratio − Credit Cost Ratio**
+**Pre-tax RoA = NII/assets + Non-interest income/assets − Operating costs/assets − Provisions/assets**
 {: .notice--info}
 
 Where:
-- **NIM** = net interest margin (interest earned minus interest paid, as % of average assets)
-- **Operating Cost Ratio** = operating expenses as % of average assets — what CIR captures
-- **Credit Cost Ratio** = provisions for bad loans as % of average advances — what CIR ignores
+- Issuer NIM may use average earning assets; convert it to average total assets before using this identity.
+- **Operating cost ratio** is operating expenses divided by average total assets. CIR uses income, so it is not the same ratio.
+- Published credit cost commonly uses average advances; multiply it by advances/assets to obtain provisions/assets. Include non-credit provisions where relevant, then deduct tax to obtain after-tax RoA.
 
 CIR captures the first drain. Credit cost captures the second. A bank that optimises only on CIR is like a shopkeeper who counts receivables as income: her books look profitable for months, right up until the moment her customers stop paying.
 
@@ -69,13 +73,9 @@ The Cost-to-Income Ratio is the banking equivalent of an industrial operating ra
 | Established NBFCs (Bajaj Finance) | 25–40% | No deposit branch network; structurally leaner |
 | Housing finance companies | 25–35% | Asset-heavy, low servicing complexity |
 
-Specific cited data for FY25:
-- **HDFC Bank Q3FY25:** 40.6% (Q4FY24: ~38%)
-- **ICICI Bank FY25:** ~39% (derived from ₹42,372 cr opex / ₹107,768 cr revenue)
-- **SBI standalone FY25:** ~51.6% (cited from S&P/Business Standard)
-- **SBI consolidated:** ~65–66% (inflated by SBI Life and SBI Mutual Fund subsidiaries)
+One verified FY25 reference is [SBI's chairman's message](https://sbi.bank.in/corporate/SBIAR2425/chairmans-message.html), “Operating Performance”: standalone CIR **51.64%**, RoA **1.10%** and RoE **19.87%**. These definitions belong to that issuer and reporting period; a peer comparison needs equally sourced, consistent figures.
 
-The SBI standalone vs consolidated gap is a useful reminder: always use standalone CIR when comparing bank operating efficiency. Subsidiaries — insurance, mutual funds, wealth management — have entirely different cost structures and should not be blended in.
+Do not mix standalone bank income with consolidated insurance or asset-management operations. The broad segment ranges above are rough analytical orientation, not a sourced current peer ranking.
 
 ### Operating Leverage: Why Scale Is the Moat
 
@@ -83,7 +83,7 @@ A core banking platform built for five million customers costs almost the same t
 
 A bank growing from ₹1 lakh crore to ₹2 lakh crore in advances does NOT double its operating cost — the cost base might grow 15–20% while NII doubles. This structural advantage compounds across decades. HDFC Bank's ability to run at 40% CIR while a small finance bank runs at 70% CIR does not mean HDFC manages every rupee better — it means HDFC's fixed cost base is amortised over a vastly larger franchise.
 
-The practical implication: **low CIR can be the product of genuine efficiency or merely scale.** An analyst must distinguish the two. A small bank at 55% CIR growing at 25% per year will reach a lower CIR than a large bank at 42% growing at 8% — in five years, the denominator (NII) of the small bank will have grown enough to compress its CIR structurally. The valuation question is whether the credit quality of that rapid growth will hold.
+The practical implication: **low CIR can be the product of genuine efficiency or merely scale.** An analyst must distinguish the two. A smaller bank can reduce CIR as revenue grows faster than operating costs, but revenue growth alone cannot establish that it will overtake another bank's CIR. Forecast both numerator and denominator. The valuation question is whether the credit quality of that rapid growth will hold.
 
 ## The Accrual Trap: Why CIR Looks Good Before the Crisis
 
@@ -93,35 +93,15 @@ The most important limitation of CIR is timing. Here is the mechanism, step by s
 
 Under RBI's Income Recognition, Asset Classification and Provisioning (IRACP) norms, interest income on performing (standard) assets is recognised on an accrual basis — the bank books the income when it is *due*, not when it is *received*.
 
-Consider a ₹100 crore loan at 10% per annum (₹2.5 crore interest per quarter):
+For timing intuition, take a hypothetical ₹100 crore loan at 10% annually: one quarter's simple interest is ₹2.5 crore. If that quarter's interest remains unpaid for more than 90 days, the asset can become non-performing under the applicable rule; reverse uncollected accrued interest when required and recognize the relevant provision.
 
-| Quarter | Event | Accrued income | Cash received |
-|---------|-------|---------------|---------------|
-| Q1 | Borrower current | ₹2.5 cr booked | ₹2.5 cr received ✓ |
-| Q2 | Borrower misses payment (30 DPD) | ₹2.5 cr booked | ₹0 received ✗ |
-| Q3 | 60–89 days past due | ₹2.5 cr booked | ₹0 received ✗ |
-| Q4 | Crosses 90 days → classified NPA | Income *reversed*: −₹5 cr | ₹0 received ✗ |
-| Q4 | Provision: 15% of ₹100 cr | −₹15 cr charge | |
+Do not stretch 30, 60 and 90 days past due across three whole quarters. A missed payment ages in calendar days. The exact income reversal depends on accrued and uncollected amounts, not a generic assumption that two quarters always reverse together. Provisioning also depends on security, asset category and the applicable regulatory regime.
 
-**Net P&L swing at NPA classification:** −₹5 cr (income reversal) + −₹15 cr (provision) = **−₹20 crore in a single quarter** — from a loan that had been showing as ₹2.5 crore income per quarter for three quarters before that.
+### Provisioning Requires a Dated Rule
 
-CIR was fine throughout. The operating expenses didn't change. The accrued (but uncollected) interest was *inflating* the denominator of CIR, making the efficiency ratio look *better* than reality in the three quarters before the NPA classification. The efficiency metric was lying — not because anyone was dishonest, but because accrual accounting is structurally blind to collection risk.
+Non-performing classification and the required provision are separate questions. Asset category, time in the relevant category, secured and unsecured portions, recoverable collateral and the applicable RBI regime affect the calculation. Time **as doubtful** must not be confused with total time since first becoming NPA; the original table did so.
 
-### RBI's Provisioning Ladder
-
-Once classified as NPA, the minimum provisioning requirements escalate over time:
-
-| Category | Trigger | Minimum provisioning |
-|----------|---------|---------------------|
-| Sub-standard | 90+ days overdue, up to 12 months as NPA | 15% (secured); 25% (unsecured) |
-| Doubtful ≤ 1 year | NPA for 12–24 months | 25% secured + 100% unsecured |
-| Doubtful 1–3 years | NPA for 24–36 months | 40% secured + 100% unsecured |
-| Doubtful > 3 years | NPA > 36 months | 100% |
-| Loss | Identified by auditor or RBI inspection | 100% |
-
-*Source: RBI Master Circular on IRACP norms.*
-
-The RBI has indicated that a Provision Coverage Ratio (PCR = total provisions / gross NPA) of 70% is desirable — a PCR below this signals that under-provisioning risk remains.
+This revision removes that misleading ladder rather than treating a simplified percentage table as current regulatory guidance. Use the applicable dated RBI instruction for the institution and loan category. A provision coverage ratio is a diagnostic alongside collateral and asset quality, not a universal cash-recovery percentage or a blanket present-day 70% requirement.
 
 ### Yes Bank: The Canonical Indian Case
 
@@ -135,12 +115,12 @@ Yes Bank's collapse is the cleanest documented case of CIR-as-illusion in Indian
 
 What was Yes Bank's CIR doing during FY17–FY18? The available evidence is that the ratio appeared reasonable — the accrued interest from stressed borrowers was inflating NII (the denominator), making operating costs look proportionally small. The signal was not in the efficiency ratio. It was in the divergence between PCR and GNPA, the concentration of loans to stressed sectors, and the operating cash flow vs stated profit gap.
 
-**The cash-adjusted CIR** captures what the standard ratio hides:
+A **credit-cost-adjusted expense ratio** can put operating expenses and provisions on the same revenue base:
 
-**Adjusted CIR = (Operating Expenses + Credit Costs) / Operating Income**
+**Adjusted ratio = (Operating Expenses + Provisions) / Operating Income**
 {: .notice--info}
 
-This adds provisions back into the numerator. It answers: "If the bank had recognised credit losses in the same period as the income, what would efficiency look like?" A bank with 42% standard CIR and 2% credit cost added to the numerator will show a very different adjusted ratio than one with 42% CIR and 0.4% credit cost.
+It is not a cash-collection ratio: provisions are accounting charges, and the denominator can still include accrual income. Convert a published credit-cost percentage to rupees or to the same denominator before adding it to operating expenses. In the fictional example below, (1.764+0.500)/4.200=53.905% for Alpha and (1.764+1.500)/4.200=77.714% for Beta. Adding a loan-based 2% directly to a revenue-based CIR would mix denominators.
 
 ## The RoA Decomposition: Three Levers, One Number
 
@@ -149,7 +129,7 @@ Return on Assets is the cleanest single-number summary of a bank's business mode
 **RoA = NIM + Non-Interest Income − Operating Cost Ratio − Credit Cost Ratio − Tax Effect**
 {: .notice--info}
 
-All terms expressed as a percentage of average total assets.
+All terms must be converted to average total assets. Published NIM and credit-cost denominators can differ; the identity applies only after conversion.
 
 The relationship between CIR and the operating cost ratio:
 
@@ -167,39 +147,30 @@ Two banks, identical in size (₹1,00,000 crore average assets) and efficiency (
 | NIM | 3.50% | 3.50% |
 | Non-Interest Income | 0.70% | 0.70% |
 | Total Operating Revenue | 4.20% | 4.20% |
-| Operating Expenses (CIR = 42%) | 1.76% | 1.76% |
-| Pre-Provision Operating Profit | 2.44% | 2.44% |
-| **Credit Cost Ratio** | **0.50%** | **1.50%** |
-| Pre-Tax RoA | 1.94% | 0.94% |
-| Tax (25%) | 0.49% | 0.24% |
-| **RoA** | **1.45%** | **0.71%** |
+| Operating Expenses (CIR = 42%) | 1.764% | 1.764% |
+| Pre-Provision Operating Profit | 2.436% | 2.436% |
+| **Provisions / average assets** | **0.500%** | **1.500%** |
+| Pre-Tax RoA | 1.936% | 0.936% |
+| Tax (25%) | 0.484% | 0.234% |
+| **RoA** | **1.452%** | **0.702%** |
 | Equity multiplier (12×) | 12× | 12× |
-| **RoE** | **17.4%** | **8.5%** |
+| **RoE on average equity** | **17.424%** | **8.424%** |
 | Cost of Equity (Ke) | 12% | 12% |
 | Sustainable growth (g) | 7% | 4% |
-| **Justified P/B = (RoE − g)/(Ke − g)** | **(17.4 − 7)/(12 − 7) = 2.08×** | **(8.5 − 4)/(12 − 4) = 0.56×** |
+| Opening-equity RoE, with linear within-year book growth | 18.03384% | 8.59248% |
+| **Model P/B = (opening-equity RoE − g)/(Ke − g)** | **2.207×** | **0.574×** |
 
-Identical CIR. Identical NIM. A one percentage point difference in credit cost ratio produces a **3.7× difference in justified P/B multiple** — Bank Alpha is a 2× book value compounder; Bank Beta is trading at half book, destroying shareholder value with every passing year.
+For this teaching model, assume average equity equals opening equity×(1+g/2), as if book grew linearly within the year. Therefore opening-equity RoE equals average-equity RoE×(1+g/2). An actual bank needs its reported averages and book changes reconciled; this conversion is not universal.
+
+With that explicit convention, the assumptions produce about a **3.84× difference in model P/B**. Both provisions and g differ here, so it is not a pure estimate of credit cost alone. These are fictional modeled values, not observed market prices. The calculation uses unrounded inputs.
 
 *(Illustrative example; leverage, g, and Ke are simplified for pedagogical clarity.)*
 
-### NIM Compression: The 2025–2026 Context
+### NIM Compression: Read the Repricing Schedule
 
-RBI cut the repo rate by a cumulative 125 basis points in the 2025 easing cycle. NIM is being compressed across the system:
+When policy rates fall, floating-rate loans and deposits need not reprice at the same speed. External-benchmark loans, MCLR-linked loans and fixed-rate loans have different reset terms; an MCLR loan does not necessarily reprice immediately. Fixed deposits often retain their contracted rate until renewal.
 
-- When rates fall, floating-rate loans (MCLR-linked, home loans) reprice immediately
-- Fixed deposits reprice only when they mature — a 6–24 month lag
-- Near-term effect: lending yields fall faster than deposit costs → NIM compresses
-
-System-level NIM fell ~20 basis points in FY25 vs FY24. HDFC Bank's NIM has already compressed from 4.3% in FY23 to 3.6% in FY24 due to the merger with HDFC Ltd (the parent had a higher cost of funds).
-
-System RoA trajectory:
-- **FY25:** ~1.3% (above the 20-year average of 0.8%)
-- **FY26 forecast:** ~1.1–1.2% (NIM headwind, normalisation of treasury gains)
-- System credit cost FY25: **~0.4%** — a decade low, driven by clean post-pandemic books
-- Credit cost FY26 forecast: remains below 0.5% unless MFI/unsecured stress broadens
-
-This creates an important current-year context: the system is in a rare period where both CIR (scale + digital efficiency) and credit cost (clean books after a decade of NPA resolution) are favourable simultaneously. The next cycle will test which banks have genuinely durable advantages vs which benefited from benign credit conditions.
+Near-term NIM can compress if asset yields fall before funding costs do. The size and timing depend on the lender's actual repricing buckets and funding mix. Do not carry an undated FY26 forecast forward as an October 2026 outcome. Compare dated disclosures and keep standalone, consolidated and average-balance definitions consistent.
 
 ## From RoA to DCF: Why Banks Are Valued Differently
 
@@ -210,7 +181,7 @@ The correct framework is **Free Cash Flow to Equity (FCFE)**, which for a bank r
 **FCFE = Net Income − (ΔAdvances × Risk Weight × Target CET1 Ratio)**
 {: .notice--info}
 
-If a bank grows its advances by ₹100 crore, with average 100% risk weight and a target Common Equity Tier 1 ratio of 13%, it must retain ₹13 crore of the current year's earnings as capital. The remaining ₹87 crore is freely distributable as dividend or buyback.
+Assume incremental advances of ₹100 crore, a 100% risk weight, a 13% target CET1 ratio **and net income of ₹100 crore**. Incremental required equity is ₹13 crore, leaving illustrative FCFE of ₹87 crore. Without the separate net income assumption, advance growth minus retained capital cannot determine distributable earnings. Actual capacity also depends on existing buffers, other risk-weighted assets and payout restrictions.
 
 This is why rapidly growing banks with thin capital ratios often show strong profits but pay minimal dividends. The growth is consuming capital faster than it is being generated.
 
@@ -237,7 +208,7 @@ This formula encodes the entire value creation logic of banking:
 - If RoE > Ke: the bank trades above book — it is creating value
 - If RoE < Ke: the bank trades below book — it is destroying value in real terms
 
-ICICI Bank's RoA of 2.23% in FY25, at ~11× leverage, produces RoE of ~24.5%. Against a Ke of ~13.8%, with g = 8%, the justified P/B = (24.5 − 8) / (13.8 − 8) = 2.84×. The market valuation around 3.5× book reflects the market pricing in a sustained above-WACC spread.
+As a **fictional** example, after-tax RoA=2.23% and average assets/equity=11× give RoE=24.53%. If 24.53% is separately assumed to be the **opening-equity** valuation return, Ke=13.8% and g=8% give P/B=(24.53−8)/(13.8−8)=**2.850×**. Do not automatically substitute a reported average-equity return into this opening-book model. This is not ICICI Bank’s verified FY25 RoE. The separate ICICI-named scenario in [Part 4](/blog/bank-nbfc-valuation-pbv-excess-returns/) uses an explicitly assumed 16.3% return; the two cases must not be presented as one issuer observation.
 
 Many Indian PSU banks traded below 0.5× book in 2014–2018 for the opposite reason: gross NPA peaked at **14.6% of advances in March 2018**, representing ₹8.96 lakh crore in bad loans, pushing credit costs above 3%, destroying RoA, and driving RoE well below Ke. The Government of India injected ₹3.10 lakh crore in capital into PSU banks between FY17 and FY21 — through "recap bonds" — to restore solvency. But recapitalisation addressed the capital hole; it did not fix the structural CIR gap (PSU banks still run 12–15 percentage points above private banks on CIR) or the underlying credit culture that created the problem.
 
@@ -246,7 +217,7 @@ Many Indian PSU banks traded below 0.5× book in 2014–2018 for the opposite re
 **NIM → CIR → Credit Cost → RoA → RoE → P/B multiple**
 {: .notice--info}
 
-A bank that improves its credit cost ratio by 100 basis points — through better underwriting, early warning systems, or a shift toward lower-risk segments — can lift RoA from 1.2% to 2.2%, RoE from ~14% to ~26%, and justify a P/B re-rating from ~1× to ~3×. That is a 3× stock price change from a single operational improvement, achieved without touching the CIR at all. This is why credit quality is more value-accretive than pure efficiency gains for most Indian banks.
+A lower provision burden can raise returns, holding other inputs constant. An asset-based 100-basis-point reduction raises pre-tax RoA by one point; at 25% tax, after-tax RoA rises by 0.75 points. Its effect on RoE depends on average leverage, and its P/B effect depends on Ke and g. A modeled re-rating is not a guaranteed stock-price change.
 
 ## The Operating Leverage Asymmetry
 
@@ -276,17 +247,11 @@ This is the fundamental reason why banks must be valued using through-cycle assu
 
 The risk premium embedded in a bank's cost of equity (Ke) should reflect the uncertainty of credit cost being higher than current levels. A bank with high loan book growth, a young average loan tenure, and no tested credit cycle history should command a higher Ke than an established lender. India's lending history from 2014–2022 — encompassing the PSB NPA cycle, the NBFC liquidity crisis, the microfinance stress waves — provides multiple case studies of what happens when this premium is priced too low.
 
-## What Good Looks Like: The Private Bank Equilibrium
+## What a Sustainable Model Needs
 
-The sustainable RoA for a well-run Indian private bank converges on **1.5–2.5%**, driven by:
+A sustainable model reconciles revenue, operating costs, credit provisions and tax on common asset denominators, then reconciles average equity returns to the opening-book convention used in the valuation. It also budgets the capital retained to support growth.
 
-- NIM of 3.5–5.0% (higher for consumer or MSME-focused lenders; lower for wholesale)
-- Operating cost ratio of 1.5–2.5% (CIR of 40–50% depending on NIM level)
-- Credit cost ratio of 0.4–0.8% in normal conditions (GNPA < 2%, PCR > 70%)
-
-At 10–12× leverage, this produces **RoE of 15–24%** against a Ke of 13–15% — the spread that justifies P/B multiples of 2–4×.
-
-Lenders that structurally cannot reach this equilibrium — because their cost base is too high (building franchise) or their credit culture produces persistent credit costs above 2% — will trade below book value until one of those inputs changes. The PSU sector has demonstrated how long that can take: GNPA peaked at 14.6% in March 2018; by FY24, system-level credit costs had normalised and PSU bank profits had recovered to ₹1.41 lakh crore — but the CIR gap vs private banks remains, and so does the P/B discount.
+The fictional Alpha/Beta example shows why a low CIR alone cannot justify a particular P/B multiple. A range of NIM, cost and credit inputs without fees, tax, leverage, Ke and g does not establish a universal 15–24% RoE or a 2–4× valuation range. Use an explicit through-cycle scenario and a separate recovery path where current returns are temporarily weak.
 
 ## The Two Questions to Ask Before Any Bank Investment
 
@@ -294,11 +259,11 @@ Every bank analysis ultimately reduces to two questions:
 
 **1. How efficiently does the machine run?** CIR — but read it carefully. Is low CIR from genuine efficiency or from scale? Is it being maintained by underinvesting in risk infrastructure? Is NIM compression changing the ratio even as costs are flat?
 
-**2. How much of the machine's output actually arrives as cash?** Credit cost ratio, GNPA trend, Provision Coverage Ratio, and the age distribution of the loan book. A high PCR (above 70%) with declining GNPA is a forward-looking positive signal. A low PCR with rising GNPA is a signal of future provisions yet to hit the P&L.
+**2. How much of the machine's output actually arrives as cash?** Credit cost ratio, GNPA trend, Provision Coverage Ratio, and the age distribution of the loan book. Read PCR alongside collateral, write-offs, GNPA movements and the applicable requirements. A low ratio with worsening asset quality can signal further provision needs; a high ratio alone does not establish collectible cash.
 
 A bank with excellent CIR but rising GNPA is running a clean engine on a leaking fuel line. A bank with mediocre CIR but pristine credit quality is leaving efficiency gains on the table — but its cash flows are real and its terminal value is not at risk.
 
-**Both ratios together, not either alone, tell the truth.** The kirana store owner who counts receivables as income looks profitable right up until the moment her customers stop paying. The lender whose CIR looks fine while credit costs are building looks well-run right up until the quarter when 90 days of accrued income reverses and provisions hit simultaneously.
+**Read efficiency and credit quality together.** The kirana store owner who counts receivables as income looks profitable right up until the moment her customers stop paying. The lender whose CIR looks fine while credit costs are building looks well-run until required interest reversals and credit provisions reduce the reported return. The amounts and recognition dates depend on the actual loans and applicable rules.
 
 The Efficiency Lab tool linked below makes this decomposition interactive across 15 Indian banks and NBFCs. Select any entity to see its NIM broken down into operating drain, credit drain, and surviving RoA — and whether its current RoE earns above or below its cost of equity.
 
@@ -308,3 +273,6 @@ The Efficiency Lab tool linked below makes this decomposition interactive across
 - *[DCF Builder](https://ganesh47.github.io/india-dcf-explorer/#/dcf-builder) — full DCF model for any NIFTY 100 company*
 
 *Data sources: FY25 annual reports and Q4FY25 earnings presentations (HDFC Bank, ICICI Bank, SBI, Kotak Mahindra Bank, Axis Bank, IndusInd Bank, Bandhan Bank, IDFC First Bank, Bajaj Finance, Shriram Finance, Mahindra Finance, L&T Finance, Muthoot Finance, AU Small Finance Bank, Aavas Financiers). S&P/Business Standard for SBI CIR. RBI Master Circular on IRACP for provisioning norms. RBI DBIE for system-level NPA data. Crisil for RoA and credit cost forecasts. Damodaran (NYU Stern) for cost-of-equity benchmarks. All data for educational purposes — not investment advice.*
+
+
+Revision references: [SBI FY2024–25 chairman’s message](https://sbi.bank.in/corporate/SBIAR2425/chairmans-message.html), “Operating Performance”; [Damodaran’s lender valuation framework](https://pages.stern.nyu.edu/~adamodar/pdfiles/papers/finfirm09.pdf), equity cash-flow and stable-growth sections. Historical regulatory examples need their own dated rule and issuer evidence; this revision does not silently treat them as October forecasts.
