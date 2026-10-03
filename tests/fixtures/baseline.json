@@ -398,15 +398,15 @@
   ],
   "feed_ids": [
     "https://ganesh47.github.io/blog/bombay-house-tata-board-graph",
+    "https://ganesh47.github.io/blog/india-highway-investment-story",
     "https://ganesh47.github.io/blog/connected-machine-board-interlocks-india-corporate",
     "https://ganesh47.github.io/blog/follow-the-money-lending-networks-india",
     "https://ganesh47.github.io/blog/bank-nbfc-valuation-pbv-excess-returns",
     "https://ganesh47.github.io/blog/nbfc-liquidity-risk-ilfs-indusind-india",
     "https://ganesh47.github.io/blog/operating-ratio-and-dcf-lending-efficiency-vs-realization",
-    "https://ganesh47.github.io/blog/discounted-cashflows-india-lending-growth-part-2",
     "https://ganesh47.github.io/blog/discounted-cashflows-the-math-part-1",
-    "https://ganesh47.github.io/blog/future-of-asset-intelligence-industrial-ai-part-4",
-    "https://ganesh47.github.io/blog/infrastructure-inequality-asset-intelligence-part-3"
+    "https://ganesh47.github.io/blog/discounted-cashflows-india-lending-growth-part-2",
+    "https://ganesh47.github.io/blog/future-of-asset-intelligence-industrial-ai-part-4"
   ],
   "post_sha256": {
     "_posts/2015-07-18-Evolving DSLs, Type Systems, and Learning from Haskell.md": "6f422b10c70249402dfb499456384d7341d7963fe2ce6a24c9ce202c56e2f95c",

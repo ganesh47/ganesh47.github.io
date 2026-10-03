@@ -295,5 +295,8 @@
   },
   "/blog/Inside-HBase-Maintenance-Compactions,-MemStores,-and-Running-on-HDFS/": {
     "topic": "data-systems"
+  },
+  "/blog/india-highway-investment-story/": {
+    "topic": "finance"
   }
 }

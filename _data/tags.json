@@ -135,7 +135,9 @@
     "id": "asset-intelligence",
     "title": "Asset Intelligence",
     "aliases": [],
-    "urls": []
+    "urls": [
+      "/blog/india-highway-investment-story/"
+    ]
   },
   {
     "id": "audit",
@@ -267,7 +269,9 @@
     "id": "cash-flow",
     "title": "Cash Flow",
     "aliases": [],
-    "urls": []
+    "urls": [
+      "/blog/india-highway-investment-story/"
+    ]
   },
   {
     "id": "cdc",
@@ -841,7 +845,9 @@
     "id": "india",
     "title": "India",
     "aliases": [],
-    "urls": []
+    "urls": [
+      "/blog/india-highway-investment-story/"
+    ]
   },
   {
     "id": "indusind",
@@ -865,7 +871,9 @@
     "id": "infrastructure",
     "title": "Infrastructure",
     "aliases": [],
-    "urls": []
+    "urls": [
+      "/blog/india-highway-investment-story/"
+    ]
   },
   {
     "id": "instrumentation",
@@ -877,13 +885,17 @@
     "id": "investing",
     "title": "Investing",
     "aliases": [],
-    "urls": []
+    "urls": [
+      "/blog/india-highway-investment-story/"
+    ]
   },
   {
     "id": "invit",
     "title": "InvIT",
     "aliases": [],
-    "urls": []
+    "urls": [
+      "/blog/india-highway-investment-story/"
+    ]
   },
   {
     "id": "jails",
@@ -1123,13 +1135,17 @@
     "id": "nhai",
     "title": "NHAI",
     "aliases": [],
-    "urls": []
+    "urls": [
+      "/blog/india-highway-investment-story/"
+    ]
   },
   {
     "id": "nhit",
     "title": "NHIT",
     "aliases": [],
-    "urls": []
+    "urls": [
+      "/blog/india-highway-investment-story/"
+    ]
   },
   {
     "id": "normalization",

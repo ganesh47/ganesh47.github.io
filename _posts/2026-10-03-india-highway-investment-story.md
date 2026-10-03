@@ -2,7 +2,7 @@
 title: "India’s Highway Investment Story: Follow the Funding, Test the Cash"
 date: 2026-10-03 00:00:00 UTC
 last_modified_at: 2026-10-03
-published: false
+published: true
 categories: [blog]
 author: Ganesh Raman
 tags: [Infrastructure, NHAI, NHIT, InvIT, India, Cash-Flow, Asset-Intelligence, Investing]
