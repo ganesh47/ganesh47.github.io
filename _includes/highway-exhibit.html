@@ -1,0 +1,17 @@
+{% assign exhibit = site.data.highway_investment_exhibits | where: 'id', include.id | first %}
+{% if include.id <= 3 %}
+<figure class="highway-chart" aria-labelledby="highway-chart-{{ include.id }}-caption">
+  <div class="highway-chart-scroll" tabindex="0" role="region" aria-label="Exhibit {{ include.id }} chart; scroll horizontally on small screens">
+    <img src="{{ '/assets/images/highway-investment/exhibit-' | append: include.id | append: '.svg' | relative_url }}" alt="{% if include.id == 1 %}Government capital and borrowings on the same zero-based scale, FY2020 to FY2024. Exact values and accounting caveats follow in Exhibit 1.{% elsif include.id == 2 %}Four separate zero-based charts for NHIT revenue, assets, borrowings and distribution per unit, FY2022 to FY2026. Acquisitions change the comparison; exact values follow in Exhibit 2.{% else %}The trust-level cash bridge starts at 2,055.43 crore and adds 78.40, 93.61 and 6.80 crore to reach 2,234.24 crore. It is not consolidated operating cash flow.{% endif %}" width="720" height="{% if include.id == 2 %}580{% elsif include.id == 3 %}430{% else %}470{% endif %}" loading="lazy">
+  </div>
+  <figcaption id="highway-chart-{{ include.id }}-caption">{% if include.id == 1 %}Year-end stocks on one statutory basis.{% elsif include.id == 2 %}Separate scales preserve the four different measures.{% else %}A trust-level distribution bridge, including financing adjustments.{% endif %} Scroll the chart on small screens; exact values follow.</figcaption>
+</figure>
+{% endif %}
+<div class="highway-table-scroll" tabindex="0" role="region" aria-labelledby="exhibit-{{ include.id }}-title">
+<table class="highway-exhibit">
+  <caption id="exhibit-{{ include.id }}-title">{{ exhibit.title }}</caption>
+  <thead><tr>{% for column in exhibit.columns %}<th scope="col">{{ column }}</th>{% endfor %}</tr></thead>
+  <tbody>{% for row in exhibit.rows %}<tr>{% for cell in row %}{% if forloop.first %}<th scope="row">{{ cell }}</th>{% else %}<td{% if include.id <= 3 %} class="numeric"{% endif %}>{{ cell | markdownify | remove: '<p>' | remove: '</p>' }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody>
+</table>
+</div>
+{% if include.id == 1 or include.id == 2 or include.id == 5 %}<p class="highway-scroll-hint">Scroll horizontally to read all columns.</p>{% endif %}

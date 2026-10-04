@@ -1,5 +1,5 @@
 // Native navigation and article reading work without JavaScript.
-document.querySelectorAll('.page__content table').forEach((table, index) => {
+document.querySelectorAll('.page__content table:not(.highway-exhibit)').forEach((table, index) => {
   const region = document.createElement('div');
   region.className = 'table-scroll'; region.tabIndex = 0;
   region.setAttribute('role', 'region');
